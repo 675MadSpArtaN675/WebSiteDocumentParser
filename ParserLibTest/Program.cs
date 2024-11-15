@@ -18,6 +18,8 @@ namespace ParserLibTest
             q_parser.Parse();
             p_parser.Parse();
 
+            TestParser(c_parser, q_parser, p_parser);
+
             string[] files = ["Competentions.xml", "Questions.xml", "Practic.xml"];
             SerializeXML.SerializeToXML(c_parser.Data, files[0]);
             SerializeXML.SerializeToXML(q_parser.Data, files[1]);

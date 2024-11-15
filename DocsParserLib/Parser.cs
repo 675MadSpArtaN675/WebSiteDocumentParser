@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Text.RegularExpressions;
 using DocumentFormat.OpenXml.Office.SpreadSheetML.Y2023.MsForms;
 using DocumentFormat.OpenXml.Packaging;
@@ -6,9 +7,65 @@ using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace DocsParserLib
 {
+    public interface IDataReader<T>
+    {
+        T? GetData();
+    }
+
+    /// <summary>
+    /// Класс, представляющий документ, из которого будет собрана информация
+    /// </summary>
+    public class Document : IDataReader<Body>
+    {
+        private WordprocessingDocument _wordDoc;
+        private MainDocumentPart? _mainPart;
+        private Body? _body;
+        private Document? _document;
+
+        private MainDocumentPart? MainPart
+        {
+            get => _mainPart;
+        }
+        private Document? DocumentFull
+        {
+            get => _document;
+        }
+
+        private Body? DocBody
+        {
+            get => _body;
+        }
+
+        /// <summary>
+        /// Инициализирует экземпляр класса <see cref="Document"/>
+        /// </summary>
+        /// <param name="filename">Путь к документу для сбора информации</param>
+        /// <exception cref="MainPartNotFound">Выбрасывается в случае, если документ не найден.</exception>
+        public Document(string filename)
+        {
+            _wordDoc = WordprocessingDocument.Open(filename, false);
+            _mainPart = _wordDoc.MainDocumentPart;
+
+            if (_mainPart is null || _mainPart.Document is null || _mainPart.Document.Body is null)
+                throw new MainPartNotFound();
+
+            _body = _mainPart.Document.Body;
+        }
+
+        ~Document()
+        {
+            _wordDoc.Dispose();
+        }
+
+        public Body? GetData()
+        {
+            return DocBody;
+        }
+    }
+
     public abstract class Parser<T> : IParsable<T>
     {
-        protected Document _doc;
+        protected IDataReader<Body> _doc;
         /// <inheritdoc/>
         public abstract string[] Filters { get; set; }
 
@@ -18,7 +75,7 @@ namespace DocsParserLib
         /// <inheritdoc/>
         public abstract List<T>? Parse();
 
-        public Parser(Document document)
+        public Parser(IDataReader<Body> document)
         {
             _doc = document;
         }
@@ -82,9 +139,9 @@ namespace DocsParserLib
 
         protected Table? FindTableByTitle(string[] filters)
         {
-            if (_doc.DocBody is null) return null;
+            if (_doc.GetData() is null) return null;
 
-            var paragraphs = _doc.DocBody.Elements<Paragraph>().ToArray();
+            var paragraphs = _doc.GetData()?.Elements<Paragraph>().ToArray();
             Regex title_pattern = CreateFilterPattern(filters);
 
             foreach (var paragraph in paragraphs)
@@ -129,52 +186,6 @@ namespace DocsParserLib
         {
             string pat = string.Join('|', filters.Select(n => $"({n})"));
             return new Regex(pat, RegexOptions.IgnoreCase);
-        }
-    }
-
-    /// <summary>
-    /// Класс, представляющий документ, из которого будет собрана информация
-    /// </summary>
-    public class Document
-    {
-        private WordprocessingDocument _wordDoc;
-        private MainDocumentPart? _mainPart;
-        private Body? _body;
-        private Document? _document;
-
-        public MainDocumentPart? MainPart
-        {
-            get => _mainPart;
-        }
-        public Document? DocumentFull
-        {
-            get => _document;
-        }
-
-        public Body? DocBody
-        {
-            get => _body;
-        }
-
-        /// <summary>
-        /// Инициализирует экземпляр класса <see cref="Document"/>
-        /// </summary>
-        /// <param name="filename">Путь к документу для сбора информации</param>
-        /// <exception cref="MainPartNotFound">Выбрасывается в случае, если документ не найден.</exception>
-        public Document(string filename)
-        {
-            _wordDoc = WordprocessingDocument.Open(filename, false);
-            _mainPart = _wordDoc.MainDocumentPart;
-
-            if (_mainPart is null || _mainPart.Document is null || _mainPart.Document.Body is null)
-                throw new MainPartNotFound();
-
-            _body = _mainPart.Document.Body;
-        }
-
-        ~Document()
-        {
-            _wordDoc.Dispose();
         }
     }
 
