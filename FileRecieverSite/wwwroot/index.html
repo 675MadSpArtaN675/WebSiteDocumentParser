@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Подгрузка файла</title>
+    </head>
+    <body>
+        <h1>Тестовый полигон</h1>
+        <div>
+            <form action="upload" method="post" enctype="multipart/form-data">
+                <label for="docReciever">Принятия документа</label>
+                <input type="file" name="file_rec" id="docReciever" change="on_file_getted">
+                <input type="submit" id="file_submit" value="Отправить">
+            </form>
+            
+
+            <script>
+                const input_field = document.getElementById("docReciever");
+                console.log(input_field.to_string);
+
+                function on_file_getted() {
+                    const pattern = /\.(doc|docx)$/;
+                    const file = this.files[0]; // Получаем первый выбранный файл
+
+                    console.log(pattern.test(file.name));
+                    if (pattern.test(file.name)) {
+                        console.log("Выбран файл: ", file.name, file.size, file.type);
+                        console.log(this.value.to_string());
+                    }
+                    else {
+                        console.log("Выбран не подходящий файл!");
+                        this.value = '';
+                        return false;
+                    }
+                }
+
+                function send_file_on_server() {
+                    console.log(1234);
+                }
+
+
+            </script>
+        </div>
+    </body>
+</html>

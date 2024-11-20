@@ -6,29 +6,51 @@ namespace FileRecieverSite
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddRazorPages();
-
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            app.Map("/upload", async (context) =>
             {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+                var req = context.Request;
+                IFormFileCollection files = req.Form.Files;
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+                var uploadPath = $"{Directory.GetCurrentDirectory()}/files";
+                if (!Directory.Exists(uploadPath))
+                    Directory.CreateDirectory(uploadPath);
 
-            app.UseRouting();
+                if (files != null && files.Count > 0)
+                {
+                    IFormFile file = req.Form.Files[0];
 
-            app.UseAuthorization();
-
-            app.MapRazorPages();
-
+                    if (file != null)
+                        using (FileStream file_stream = new FileStream($"{uploadPath}/{file.Name}", FileMode.Create))
+                        {
+                            file.CopyToAsync(file_stream);
+                        }
+                }
+            });
+            app.UseMiddleware<ParseMiddleware>();
             app.Run();
+        }
+    }
+
+    public class ParseMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public ParseMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            var Response = context.Response;
+
+            Response.ContentType = "text/html; charset=utf-8";
+
+            await Response?.SendFileAsync("wwwroot\\index.html");
+            await _next.Invoke(context);
         }
     }
 }
