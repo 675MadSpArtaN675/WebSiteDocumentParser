@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParserLibTest", "ParserLibT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsParserLib", "DocsParserLib\DocsParserLib.csproj", "{FC69A21B-3199-44D1-A70B-0EBB3E3142E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRecieverSite", "FileRecieverSite\FileRecieverSite.csproj", "{02EE7B64-E8C0-402E-9E06-7412F1228446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FC69A21B-3199-44D1-A70B-0EBB3E3142E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC69A21B-3199-44D1-A70B-0EBB3E3142E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC69A21B-3199-44D1-A70B-0EBB3E3142E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EE7B64-E8C0-402E-9E06-7412F1228446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EE7B64-E8C0-402E-9E06-7412F1228446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EE7B64-E8C0-402E-9E06-7412F1228446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EE7B64-E8C0-402E-9E06-7412F1228446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

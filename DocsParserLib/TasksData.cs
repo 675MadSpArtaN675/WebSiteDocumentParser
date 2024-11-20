@@ -181,7 +181,7 @@
         /// <summary>
         /// Указывает на список вариантов ответа
         /// </summary>
-        public List<AnswerVariant> answerVariants { get; private set; }
+        public List<AnswerVariant> answerVariants { get; set; }
 
         /// <summary>
         /// Инициализирует экземпляр структуры <see cref="PracticTask"/>. 
