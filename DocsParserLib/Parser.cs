@@ -134,21 +134,16 @@ namespace DocsParserLib
         {
             Regex change_symbols = new Regex(@"([\-\[\]\(\)])");
 
-            string[] filters_new = new string[filters.Length];
-
             for (int i = 0; i < filters.Length; i++)
             {
                 MatchCollection m_colls = change_symbols.Matches(filters[i]);
 
                 if (m_colls.Count > 0)
                     foreach (Match item in m_colls)
-                        filters_new[i] = filters[i].Replace(item.Value, $"\\{item.Value}");
-                else
-                    filters_new[i] = filters[i];
-                
+                        filters[i] = filters[i].Replace(item.Value, $"\\{item.Value}");
             }
 
-            return filters_new;
+            return filters;
         }
     }
 
