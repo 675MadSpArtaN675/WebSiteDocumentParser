@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using DocumentFormat.OpenXml.Wordprocessing;
 
@@ -125,8 +126,29 @@ namespace DocsParserLib
 
         protected Regex CreateFilterPattern(string[] filters)
         {
-            string pat = string.Join('|', filters.Select(n => $"({n})"));
+            string pat = string.Join('|', EscapingSequences(filters).Select(n => $"({n.Replace("-", "\\-")})"));
             return new Regex(pat, RegexOptions.IgnoreCase);
+        }
+
+        protected string[] EscapingSequences(string[] filters)
+        {
+            Regex change_symbols = new Regex(@"([\-\[\]\(\)])");
+
+            string[] filters_new = new string[filters.Length];
+
+            for (int i = 0; i < filters.Length; i++)
+            {
+                MatchCollection m_colls = change_symbols.Matches(filters[i]);
+
+                if (m_colls.Count > 0)
+                    foreach (Match item in m_colls)
+                        filters_new[i] = filters[i].Replace(item.Value, $"\\{item.Value}");
+                else
+                    filters_new[i] = filters[i];
+                
+            }
+
+            return filters_new;
         }
     }
 

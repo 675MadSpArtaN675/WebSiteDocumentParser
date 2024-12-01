@@ -1,5 +1,6 @@
 ﻿using DocsParserLib;
 using Serialization;
+using System.Text.RegularExpressions;
 
 namespace ParserLibTest
 { 
