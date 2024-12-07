@@ -21,11 +21,11 @@ namespace DocsParserLib
         /// <summary>
         /// Инициализирует экземпляр класса <see cref="Document"/>
         /// </summary>
-        /// <param name="filename">Путь к документу для сбора информации</param>
+        /// <param name="file_stream">Поток для считывания из документа</param>
         /// <exception cref="MainPartNotFound">Выбрасывается в случае, если документ не найден.</exception>
-        public Document(string filename)
+        public Document(Stream file_stream)
         {
-            _wordDoc = WordprocessingDocument.Open(filename, false);
+            _wordDoc = WordprocessingDocument.Open(file_stream, false);
             _mainPart = _wordDoc.MainDocumentPart;
 
             if (_mainPart is null || _mainPart.Document is null || _mainPart.Document.Body is null)
@@ -33,6 +33,9 @@ namespace DocsParserLib
 
             _body = _mainPart.Document.Body;
         }
+
+        public Document(string filepath) : this(new FileStream(filepath, FileMode.Open))
+        { }
 
         ~Document()
         {

@@ -8,9 +8,9 @@ namespace ParserLibTest
     {
         public static void Main(string[] args)
         {
-            // Тест 1 (Новое получение данных из парсеров)
-
+            // Тест 1 (Новое получение данных из парсеров
             string line = "ОМ__ТЗWebК_2023.docx";
+
             Document doc = new Document(line);
 
             IDataOutput dataOutput = new DataOutput();

@@ -1,6 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using ParserSiteWork.Models;
-using System.Diagnostics;
+using DocsParserLib;
+using DocumentFormat.OpenXml.Vml;
+using Serialization;
+using Microsoft.Extensions.FileProviders;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using DocumentFormat.OpenXml.Drawing.Charts;
 
 namespace ParserSiteWork.Controllers
 {
@@ -13,20 +19,30 @@ namespace ParserSiteWork.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult DisplayDocumentData()
         {
-            return View();
-        }
+            var doc_data = HttpContext.Request.Form.Files[0];
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            using (var stream = doc_data.OpenReadStream())
+            {
+                Document doc = new Document(stream);
+
+                IDataOutput dataOutput = new DataOutput();
+                ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
+
+                string json = JsonSerializer.Serialize(dataBundle);
+
+                ViewBag.DocumentData = json;
+
+                return View("Privacy", dataBundle);
+            }
+
         }
     }
 }

@@ -1,6 +1,45 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
+@model ParsedDataBundle
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<table>
+    <tr>
+        <th>Номер компетенции</th>
+        <th>Имя</th>
+        <th>Оценочные критерии</th>
+    </tr>
+@foreach (var item in Model.Competentions)
+{
+    <tr>
+        <td>@item.Number</td>
+        <td>@item.Name</td>
+            @{
+                string criterias = String.Empty;
+                foreach (EvalulationMaterial item_ in item.EvalulationMaterial)
+                {
+                    string name = item_.Name;
+                    string descr = item_.Description;
+                    string em_type = item_.EM_Type;
+                    string ev_indicator = item_.EvalulationIndicator;
+
+                    criterias += $"{name}\n{ev_indicator}\n\n";
+                }
+        }
+        <td>
+            @foreach (EvalulationMaterial item_ in item.EvalulationMaterial)
+            {
+                string name = item_.Name;
+                string descr = item_.Description;
+                string em_type = item_.EM_Type;
+                string ev_indicator = item_.EvalulationIndicator;
+
+                <p>@name<br></br></p>
+            }
+        </td>
+    </tr>
+}
+
+</table>
+
