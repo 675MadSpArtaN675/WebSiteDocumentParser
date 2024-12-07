@@ -312,8 +312,6 @@ namespace DocsParserLib
             _comp_parser = comp_parser;
             _questions = new List<Question>();
             Filters = new string[]{ "результатов", "компетенций", "вопросы" };
-
-
         }
 
         /// <summary>
@@ -450,14 +448,15 @@ namespace DocsParserLib
             int i = 0;
             foreach (var paragraph in answer.Skip(1))
             {
-                if (paragraph.InnerText != "")
+                string ans_description = paragraph.InnerText.Trim();
+                bool valid_var = false;
+
+                if (ans_description != "")
                 {
-                    string ans_description = paragraph.InnerText.Trim();
-                    bool valid_var = false;
-
-                    if (paragraph.Elements<Run>()?.ElementAt(0)?.RunProperties?.Bold is not null)
+                    Console.WriteLine(paragraph.Elements<Run>()?.ElementAt(0).InnerText.Trim());
+                    if (paragraph.Elements<Run>().Any(n => n.RunProperties?.Bold is not null))
                         valid_var = true;
-
+                
                     variants.Add(new AnswerVariant(i, ans_description, valid_var));
                     i++;
                 }
