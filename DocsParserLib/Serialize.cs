@@ -60,15 +60,11 @@ namespace Serialization
             QuestionParser q_parser = new QuestionParser(document, c_parser);
             PracticTasksParser p_parser = new PracticTasksParser(document, c_parser);
 
-            c_parser.Parse();
-            q_parser.Parse();
-            p_parser.Parse();
-
             return new ParsedDataBundle
             {
-                Competentions = c_parser.Data,
-                Questions = q_parser.Data,
-                PracticTasks = p_parser.Data
+                Competentions = c_parser.Parse(),
+                Questions = q_parser.Parse(),
+                PracticTasks = p_parser.Parse()
             };
         }
     }
