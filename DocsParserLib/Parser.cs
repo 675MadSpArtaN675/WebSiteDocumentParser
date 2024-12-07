@@ -453,7 +453,6 @@ namespace DocsParserLib
 
                 if (ans_description != "")
                 {
-                    Console.WriteLine(paragraph.Elements<Run>()?.ElementAt(0).InnerText.Trim());
                     if (paragraph.Elements<Run>().Any(n => n.RunProperties?.Bold is not null))
                         valid_var = true;
                 
