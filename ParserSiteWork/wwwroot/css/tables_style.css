@@ -1,4 +1,10 @@
-﻿table, th, td {
+﻿textarea {
+    width: 100%;
+    border: 0px;
+    resize: vertical;
+}
+
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 8px;

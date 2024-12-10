@@ -1,0 +1,38 @@
+﻿@model List<PracticTask>
+
+<h2>Практические задания</h2>
+<table>
+    <tr>
+        <th>Номер</th>
+        <th>Описание</th>
+        <th>Компетенция</th>
+        <th>Номер правильного варианта ответа</th>
+        <th>Номер варианта ответа</th>
+        <th>Варианты ответов</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        string answers_count = (item.answerVariants.Count + 1).ToString();
+        string valid_variant = item.answerVariants.Find(n => n.ValidAnswer).Description;
+
+        <tr>
+
+            <td rowspan=@answers_count>@item.Number.ToString()</td>
+            <td rowspan=@answers_count>@item.Description</td>
+            <td rowspan=@answers_count>@item.Competention.Name</td>
+            <td rowspan=@answers_count>@valid_variant</td>
+
+            @foreach (var answer in item.answerVariants)
+            {
+            <tr>
+                <td>@answer.AnswerNormalNumber</td>
+                <td>@answer.Description</td>
+            </tr>
+
+                if (answer.ValidAnswer)
+                    valid_variant = answer.Description;
+            }
+        </tr>
+    }
+</table>

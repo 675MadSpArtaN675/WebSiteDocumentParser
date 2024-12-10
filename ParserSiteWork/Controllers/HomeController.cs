@@ -1,12 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ParserSiteWork.Models;
 using DocsParserLib;
-using DocumentFormat.OpenXml.Vml;
 using Serialization;
-using Microsoft.Extensions.FileProviders;
-using System.Text.Json.Serialization;
 using System.Text.Json;
-using DocumentFormat.OpenXml.Drawing.Charts;
 
 namespace ParserSiteWork.Controllers
 {
@@ -36,13 +32,8 @@ namespace ParserSiteWork.Controllers
                 IDataOutput dataOutput = new DataOutput();
                 ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
 
-                string json = JsonSerializer.Serialize(dataBundle);
-
-                ViewBag.DocumentData = json;
-
-                return View("Privacy", dataBundle);
+                return View("TablesPage", dataBundle);
             }
-
         }
     }
 }
