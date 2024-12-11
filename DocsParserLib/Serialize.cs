@@ -13,7 +13,7 @@ namespace Serialization
     /// <summary>
     /// Структура для хранения всех распарсенных данных, таких как компетенции, вопросы и практические задачи
     /// </summary>
-    public struct ParsedDataBundle // Хранение всех распарсенных экземпляров
+    public class ParsedDataBundle // Хранение всех распарсенных экземпляров
     {
         /// <summary>
         /// Список распарсенных компетенций
@@ -29,6 +29,18 @@ namespace Serialization
         /// Список распарсенных практических задач
         /// </summary>
         public List<PracticTask> PracticTasks { get; set; }
+
+        public ParsedDataBundle()
+        {
+            Competentions = new List<Competention>();
+            Questions = new List<Question>();
+            PracticTasks = new List<PracticTask>();
+        }
+
+        public Competention? GetCompetentionByName(string name)
+        {
+            return Competentions.FirstOrDefault(n => n.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
     }
 
     /// <summary>

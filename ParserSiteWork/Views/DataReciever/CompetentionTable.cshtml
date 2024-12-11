@@ -1,0 +1,59 @@
+﻿@model List<Competention>
+@{
+	string name = (string)(ViewData["BaseNamesModule"] ?? "");
+	HtmlNamesFormatter competentionNames = new HtmlNamesFormatter(name, "Competentions", "EvalulationMaterial");
+}
+<h2>Компетенции</h2>
+
+<table>
+	<tr>
+		<th>Номер компетенции</th>
+		<th>Имя</th>
+		<th>Результаты обучения</th>
+		<th>Тип ОМ</th>
+		<th>Показатели оценивания</th>
+	</tr>
+
+	@for (int i = 0; i < Model.Count; i++)
+	{
+		Competention item = Model[i];
+		int ev_mat_count = item.EvalulationMaterial.Count;
+		<tr>
+			<td rowspan="4">
+				@Html.TextArea(competentionNames.GetCompetentionComponent(["Number"], i), Model[i].Number.ToString(), new { @value = item.Number.ToString() })
+			</td>
+			<td rowspan="4">
+				@Html.TextArea(competentionNames.GetCompetentionComponent(["Name"], i), Model[i].Name, new { @value = item.Name.ToString() })
+			</td>
+
+			@for (int j = 0; j < item.EvalulationMaterial.Count; j++)
+			{
+				EvalulationMaterial ev_mater = item.EvalulationMaterial[j];
+
+				<tr>
+				<td>
+					<div style="font-size: 20px;">
+						<strong>
+								@Html.TextArea(competentionNames.GetEvalComponent(["Name"], i, j), Model[i].EvalulationMaterial[j].Name, new { @value = ev_mater.Name })
+						</strong>
+					</div>
+					<div>
+							@Html.TextArea(competentionNames.GetEvalComponent(["Description"], i, j), Model[i].EvalulationMaterial[j].Description, new { @value = ev_mater.Description })
+					</div>
+				</td>
+				<td>
+						@Html.TextArea(competentionNames.GetEvalComponent(["EM_Type"], i, j), Model[i].EvalulationMaterial[j].EM_Type, new { @value = ev_mater.EM_Type })
+				</td>
+				<td>
+						@Html.TextArea(competentionNames.GetEvalComponent(["EvalulationIndicator"], i, j), Model[i].EvalulationMaterial[j].EvalulationIndicator, new { @value = ev_mater.EvalulationIndicator })
+				</td>
+				</tr>
+			}
+
+		</tr>
+	}
+</table>
+<br/>
+<br />
+	
+<br/>

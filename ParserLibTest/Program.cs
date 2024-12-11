@@ -38,8 +38,6 @@ namespace ParserLibTest
 
             // Тест 2 (Новый подход в сеарилизации)
 
-            Console.WriteLine("Враги наследника трепищите!!!\n");
-
             ISerialization xmlSerializer = new SerializeXML();
             ISerialization jsonSerializer = new SerializeJSON();
 

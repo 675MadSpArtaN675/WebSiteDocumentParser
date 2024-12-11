@@ -3,7 +3,7 @@
     /// <summary>
     /// Структура, представляющая показатель оценивания
     /// </summary>
-    public struct EvalulationMaterial
+    public class EvalulationMaterial
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -26,6 +26,9 @@
             EvalulationIndicator = evalulation_indicator;
         }
 
+        public EvalulationMaterial() : this("", "", "", "") 
+        { }
+
         public override string ToString()
         {
             return $"Имя: {Name}\nОписание: {Description}\nТип оценочного материала: {EM_Type}\nПоказатели оценивания: {EvalulationIndicator}\n";
@@ -35,7 +38,7 @@
     /// <summary>
     /// Структура, представляющая компетенцию
     /// </summary>
-    public struct Competention
+    public class Competention
     {
         public int Number { get; set; }
         public string Name { get; set; }
@@ -59,7 +62,7 @@
         /// </summary>
         /// <param name="_number">Порядковый номер компетенции</param>
         /// <param name="_name">Название компетенции (Например, ПК-2)</param>
-        public Competention(int _number, string _name) : this(_number, _name, new List<EvalulationMaterial>()) { }
+        public Competention(string _name, int _number = 1) : this(_number, _name, new List<EvalulationMaterial>()) { }
 
         /// <summary>
         /// Инициализация экземпляра структуры <see cref="Competention"/>
@@ -80,7 +83,7 @@
     /// <summary>
     /// Структура, представляющая вопрос.
     /// </summary>
-    public struct Question : IAssessmentItem, ICompetencinable
+    public class Question : IAssessmentItem, ICompetencinable
     {
         public int Number { get; set; }
         public string Description { get; set; }
@@ -100,6 +103,9 @@
             Description = _descr;
         }
 
+        public Question() : this(1, new Competention(), "")
+        { }
+
         public override string ToString()
         {
             return $"Номер: {Number}\nНазвание компетенции: {Competention.Name}\nОписание вопроса: {Description}\n";
@@ -109,7 +115,7 @@
     /// <summary>
     /// Структура, представляющий вариант ответа в практическом задании
     /// </summary>
-    public struct AnswerVariant : IAssessmentItem
+    public class AnswerVariant : IAssessmentItem
     {
         /// <inheritdoc/>
         public int Number { get; set; }
@@ -140,6 +146,11 @@
             {
                 return Number + 1;
             }
+
+            set
+            {
+                Number = value - 1;
+            }
         }
 
         private string Letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТ";
@@ -150,12 +161,14 @@
         /// <param name="_num">Номер варианта ответа (от 0)</param>
         /// <param name="_desc">Описание задания</param>
         /// <param name="valid">Флаг, обозначающий является ли данный вариант ответа правильным</param>
-        public AnswerVariant(int _num, string _desc, bool valid)
+        public AnswerVariant(int _num, string _desc, bool valid = false)
         {
             Number = _num;
             Description = _desc;
             ValidAnswer = valid;
         }
+
+        public AnswerVariant() : this(0, "") { }
 
         public override string ToString()
         {
@@ -166,7 +179,7 @@
     /// <summary>
     /// Структура, обозначающая практическое задание
     /// </summary>
-    public struct PracticTask : IAssessmentItem, ICompetencinable
+    public class PracticTask : IAssessmentItem, ICompetencinable
     {
         /// <inheritdoc/>
         public int Number { get; set; }
@@ -206,6 +219,9 @@
         /// <param name="_descr">Описание задания</param>
         /// <param name="answers">Список вариантов ответа. <seealso cref="AnswerVariant"></seealso></param>
         public PracticTask(int _numb, Competention _competetion, string _descr) : this(_numb, _competetion, _descr, new List<AnswerVariant>()) { }
+
+        public PracticTask() : this(1, new Competention(), "")
+        { }
 
         /// <summary>
         /// Получение правильного ответа на задание

@@ -440,25 +440,29 @@ namespace DocsParserLib
 
         private PracticTask PracticeTaskRowParse(TableRow row, int question_num, Competention comp)
         {
-            IEnumerable<Paragraph> answer = row.ElementAt(1).Elements<Paragraph>();
-
+            IEnumerable<Paragraph> answer = row.Elements<TableCell>().ElementAt(1).Elements<Paragraph>();
+            
             string title = answer.ElementAt(0).InnerText.Trim();
+
             List<AnswerVariant> variants = new List<AnswerVariant>();
 
-            int i = 0;
+            int answer_variant_number = 0;
             foreach (var paragraph in answer.Skip(1))
             {
-                string ans_description = paragraph.InnerText.Trim();
-                bool valid_var = false;
+                string answer_description = paragraph.InnerText.Trim();
 
-                if (ans_description != "")
+                bool valid_variant = false;
+
+                if (answer_description != "")
                 {
                     if (paragraph.Elements<Run>().Any(n => n.RunProperties?.Bold is not null))
-                        valid_var = true;
-                
-                    variants.Add(new AnswerVariant(i, ans_description, valid_var));
-                    i++;
+                        valid_variant = true;
+
+                    variants.Add(new AnswerVariant(answer_variant_number, answer_description, valid_variant));
+                    answer_variant_number++;
                 }
+                else
+                    continue;
             }
 
             PracticTask task = new PracticTask(question_num, comp, title, variants);
