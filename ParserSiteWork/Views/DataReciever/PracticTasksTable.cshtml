@@ -19,12 +19,12 @@
         var item = Model[i];
 
         string answers_count = (item.answerVariants.Count + 1).ToString();
-        int? valid_variant = item.answerVariants.Find(n => n.ValidAnswer)?.Number;
+        int? valid_variant = item.answerVariants.Find(n => n.ValidAnswer)?.AnswerNormalNumber;
 
         <tr>
 
             <td rowspan=@answers_count>
-                @Html.TextArea(questionsNames.GetCompetentionComponent(["Number"], i), Model[i].Number.ToString(), new { @value = @item.Number.ToString() })
+                @Html.TextArea(questionsNames.GetCompetentionComponent(["Number"], i), Model[i].Number.ToString(), new { @value = @item.Number.ToString(), @readonly = true})
             </td>
 
             <td rowspan=@answers_count>
@@ -45,7 +45,7 @@
 
                 <tr>
                 <td>
-                        @Html.TextArea(questionsNames.GetEvalComponent(["AnswerNormalNumber"], i, j), Model[i].answerVariants[j].AnswerNormalNumber.ToString(), new { @value = answer.AnswerNormalNumber })
+                        @Html.TextArea(questionsNames.GetEvalComponent(["AnswerNormalNumber"], i, j), Model[i].answerVariants[j].AnswerNormalNumber.ToString(), new { @value = answer.AnswerNormalNumber, @readonly = true })
                 </td>
 
                 <td>
@@ -55,7 +55,7 @@
             </tr>
 
                 if (answer.ValidAnswer)
-                    valid_variant = answer.Number;
+                    valid_variant = answer.AnswerNormalNumber;
             }
         </tr>
     }

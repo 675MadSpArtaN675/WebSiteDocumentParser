@@ -14,6 +14,7 @@ namespace ParserSiteWork.Controllers
             _logger = logger;
         }
 
+        [HttpPost]
         public IActionResult DisplayDocumentData()
         {
             var doc_data = HttpContext.Request.Form.Files[0];
@@ -47,6 +48,25 @@ namespace ParserSiteWork.Controllers
                     item.Competention = data.GetCompetentionByName(item.Competention.Name) ?? new Competention("None", -1);
                 }
             }
+
+            string frame = "";
+            for (int i = 0; i < 128; i++)
+                frame += '=';
+
+            foreach (var competention in data.Competentions)
+                Console.WriteLine(competention);
+
+            Console.WriteLine(frame);
+
+            foreach (var question in data.Questions)
+                Console.WriteLine(question);
+
+            Console.WriteLine(frame);
+
+            foreach (var task in data.PracticTasks)
+                Console.WriteLine(task);
+
+            Console.WriteLine(frame);
 
             ISerialization xmlSerializer = new SerializeXML();
 
