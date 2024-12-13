@@ -1,17 +1,70 @@
 ﻿@{
     ViewData["Title"] = "Информация из документа";
     ViewData["BaseNamesModule"] = "data";
+    HtmlNamesFormatter questionsNames = new HtmlNamesFormatter((string)ViewData["BaseNamesModule"], "PracticTasks", "answerVariants");
 }
 @model ParsedDataBundle
 
 <h1>@ViewData["Title"]</h1>
 
-@using (Html.BeginForm("EditedDataRecieve", "DataReciever", FormMethod.Post))
+@using (Html.BeginForm("Test", "DataReciever", FormMethod.Post, new {@id = "Tables"}))
 {
-    @await Html.PartialAsync("CompetentionTable", Model.Competentions)
-    @await Html.PartialAsync("QuestionTable", Model.Questions)
-    @await Html.PartialAsync("PracticTasksTable", Model.PracticTasks)
+    @await Html.PartialAsync("CompetentionTable", Model.Competentions) 
+    @await Html.PartialAsync("QuestionTable", Model.Questions) 
+
+    @* @await Html.PartialAsync("PracticTasksTable", Model.PracticTasks) *@
+
+    <h2>Практические задания</h2>
+    <table>
+        <tr>
+            <th>Номер</th>
+            <th>Описание</th>
+            <th>Компетенция</th>
+            <th>Номер варианта ответа</th>
+            <th>Варианты ответов</th>
+            <th>Является правильным ответом</th>
+
+        </tr>
+        @for (int i = 0; i < Model.PracticTasks.Count; i++)
+        {
+            var item = Model.PracticTasks[i];
+
+            string answers_count = (item.answerVariants.Count + 1).ToString();
+
+            <tr>
+
+                <td rowspan=@answers_count>
+                    @Html.TextArea(questionsNames.GetCompetentionComponent(["Number"], i), Model.PracticTasks[i].Number.ToString(), new { @value = @item.Number.ToString(), @readonly = true })
+                </td>
+
+                <td rowspan=@answers_count>
+                    @Html.TextArea(questionsNames.GetCompetentionComponent(["Description"], i), Model.PracticTasks[i].Description, new { @value = @item.Description })
+                </td>
+
+                <td rowspan=@answers_count>
+                    @Html.TextArea(questionsNames.GetCompetentionComponent(["Competention", "Name"], i), Model.PracticTasks[i].Competention.Name, new { @value = item.Competention.Name })
+                </td>
+
+                @for (int j = 0; j < item.answerVariants.Count; j++)
+                {
+                    var answer = item.answerVariants[j];
+
+                <tr>
+                    <td>
+                            @Html.TextArea(questionsNames.GetEvalComponent(["AnswerNormalNumber"], i, j), Model.PracticTasks[i].answerVariants[j].AnswerNormalNumber.ToString(), new { @value = answer.AnswerNormalNumber, @readonly = true })
+                    </td>
+
+                    <td>
+                            @Html.TextArea(questionsNames.GetEvalComponent(["Description"], i, j), Model.PracticTasks[i].answerVariants[j].Description, new { @value = answer.Description })
+                    </td>
+
+                </tr>
+                }
+            </tr>
+        }
+    </table>
 
     <input type="submit" value="Загрузить"/>
 }
+
 

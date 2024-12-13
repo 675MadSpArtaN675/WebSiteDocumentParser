@@ -168,7 +168,7 @@
             ValidAnswer = valid;
         }
 
-        public AnswerVariant() : this(0, "") { }
+        public AnswerVariant() : this(0, "", false) { }
 
         public override string ToString()
         {

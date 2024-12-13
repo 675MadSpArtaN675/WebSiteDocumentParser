@@ -31,8 +31,12 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditedDataRecieve(ParsedDataBundle data)
+        public IActionResult EditedDataRecieve( ParsedDataBundle data)
         {
+            if (data is null)
+                return Content("Я ошибся!");
+
+            Console.WriteLine($"Competentions: {data.Competentions.Count};\nQuestions: {data.Questions.Count}\nPracticTasks: {data.PracticTasks.Count}");
             foreach (var item in data.Questions)
             {
                 if (item.Competention?.Name is not null)
@@ -74,6 +78,15 @@ namespace ParserSiteWork.Controllers
             serializationData.SerializeData(data, "data.xml", xmlSerializer);
 
             return Empty;
+        }
+
+        [HttpPost]
+        public IActionResult Test(ParsedDataBundle data)
+        {
+            Console.WriteLine(data);
+            Console.WriteLine($"Competentions: {data.Competentions.Count};\nQuestions: {data.Questions.Count}\nPracticTasks: {data.PracticTasks.Count}");
+
+            return Ok();
         }
     }
 }
