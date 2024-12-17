@@ -257,6 +257,8 @@ namespace DocsParserLib
                             default:
                                 eval_mat.EvalulationIndicator = text.Trim();
                                 result.EvalulationMaterial.Add(eval_mat);
+
+                                eval_mat = new EvalulationMaterial();
                                 break;
                         }
 
