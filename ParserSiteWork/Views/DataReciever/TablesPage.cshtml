@@ -7,7 +7,7 @@
 
 <h1>@ViewData["Title"]</h1>
 
-@using (Html.BeginForm("Test", "DataReciever", FormMethod.Post, new {@id = "Tables"}))
+@using (Html.BeginForm("EditedDataRecieve", "DataReciever", FormMethod.Post, new { @id = "Tables" }))
 {
     @await Html.PartialAsync("CompetentionTable", Model.Competentions) 
     @await Html.PartialAsync("QuestionTable", Model.Questions) 
@@ -48,6 +48,7 @@
                 @for (int j = 0; j < item.answerVariants.Count; j++)
                 {
                     var answer = item.answerVariants[j];
+                    string checked_attr = answer.ValidAnswer ? "checked" : "";
 
                 <tr>
                     <td>
@@ -56,6 +57,9 @@
 
                     <td>
                             @Html.TextArea(questionsNames.GetEvalComponent(["Description"], i, j), Model.PracticTasks[i].answerVariants[j].Description, new { @value = answer.Description })
+                    </td>
+                    <td>
+                        <input type="checkbox" name="@questionsNames.GetEvalComponent(["ValidAnswer"], i, j)" value="true" @checked_attr />
                     </td>
 
                 </tr>

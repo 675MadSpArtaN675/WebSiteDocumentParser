@@ -9,7 +9,9 @@ namespace ParserLibTest
         public static void Main(string[] args)
         {
             // Тест 1 (Новое получение данных из парсеров
-            string line = "ОМ__ТЗWebК_2023.docx";
+            string line = Console.ReadLine() ?? "ОМ__ТЗWebК_2023.docx";
+
+            // "ОМ__ТЗWebК_2023.docx";
 
             Document doc = new Document(line);
 
