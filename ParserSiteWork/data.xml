@@ -6,16 +6,16 @@
       <Name>ПК-2</Name>
       <EvalulationMaterial>
         <EvalulationMaterial>
-          <Name>владеть</Name>
-          <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-          <EM_Type>Прикладные задания</EM_Type>
-          <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+          <Name>знать</Name>
+          <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+          <EM_Type>Вопросы к экзамену</EM_Type>
+          <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
         </EvalulationMaterial>
         <EvalulationMaterial>
-          <Name>владеть</Name>
-          <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-          <EM_Type>Прикладные задания</EM_Type>
-          <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+          <Name>уметь</Name>
+          <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+          <EM_Type>Стандартные задания</EM_Type>
+          <EvalulationIndicator>Наличие умений</EvalulationIndicator>
         </EvalulationMaterial>
         <EvalulationMaterial>
           <Name>владеть</Name>
@@ -30,16 +30,16 @@
       <Name>ПК-6</Name>
       <EvalulationMaterial>
         <EvalulationMaterial>
-          <Name>владеть</Name>
-          <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-          <EM_Type>Прикладные задания</EM_Type>
-          <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+          <Name>знать</Name>
+          <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+          <EM_Type>Вопросы к экзамену</EM_Type>
+          <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
         </EvalulationMaterial>
         <EvalulationMaterial>
-          <Name>владеть</Name>
-          <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-          <EM_Type>Прикладные задания</EM_Type>
-          <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+          <Name>уметь</Name>
+          <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+          <EM_Type>Стандартные задания</EM_Type>
+          <EvalulationIndicator>Наличие умений</EvalulationIndicator>
         </EvalulationMaterial>
         <EvalulationMaterial>
           <Name>владеть</Name>
@@ -59,16 +59,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -87,16 +87,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -115,16 +115,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -143,16 +143,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -171,16 +171,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -199,16 +199,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -227,16 +227,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -255,16 +255,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -283,16 +283,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -311,16 +311,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -339,16 +339,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -367,16 +367,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -395,16 +395,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -423,16 +423,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -451,16 +451,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -479,16 +479,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -507,16 +507,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -535,16 +535,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -563,16 +563,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -591,16 +591,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -619,16 +619,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -647,16 +647,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -675,16 +675,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -703,16 +703,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -731,16 +731,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -759,16 +759,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -787,16 +787,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -815,16 +815,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -843,16 +843,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -871,16 +871,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -899,16 +899,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -927,16 +927,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -955,16 +955,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -983,16 +983,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1013,16 +1013,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1067,16 +1067,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1121,16 +1121,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1175,16 +1175,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1229,16 +1229,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1283,16 +1283,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1337,16 +1337,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1391,16 +1391,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1445,16 +1445,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1499,16 +1499,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1553,16 +1553,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1607,16 +1607,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1661,16 +1661,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1715,16 +1715,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1769,16 +1769,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1835,16 +1835,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1883,16 +1883,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1937,16 +1937,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -1991,16 +1991,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2045,16 +2045,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2099,16 +2099,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2153,16 +2153,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2207,16 +2207,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2261,16 +2261,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2315,16 +2315,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2369,16 +2369,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2423,16 +2423,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2477,16 +2477,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2531,16 +2531,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2585,16 +2585,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2639,16 +2639,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2693,16 +2693,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2747,16 +2747,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2801,16 +2801,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2843,16 +2843,16 @@
         <Name>ПК-2</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>задачи информационной безопасности в области защиты web-контента, основные тенденции и направления формирования и функционирования комплексной системы защиты информационных ресурсов сети интернет</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>современными средствами и методами построения комплексных систем обеспечения защиты web-контента в телекоммуникационных системах</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>применять методы и системы защиты информации для обеспечения информационной безопасности web-ресурсов</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2897,16 +2897,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2945,16 +2945,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -2999,16 +2999,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3053,16 +3053,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3107,16 +3107,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3161,16 +3161,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3215,16 +3215,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3269,16 +3269,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3323,16 +3323,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3371,16 +3371,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3425,16 +3425,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3467,16 +3467,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3521,16 +3521,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3575,16 +3575,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3623,16 +3623,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3677,16 +3677,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3731,16 +3731,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3785,16 +3785,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3839,16 +3839,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3893,16 +3893,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3941,16 +3941,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -3995,16 +3995,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4049,16 +4049,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4103,16 +4103,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4151,16 +4151,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4205,16 +4205,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4259,16 +4259,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4313,16 +4313,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4367,16 +4367,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4421,16 +4421,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4475,16 +4475,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4523,16 +4523,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4577,16 +4577,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4643,16 +4643,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4697,16 +4697,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
@@ -4751,16 +4751,16 @@
         <Name>ПК-6</Name>
         <EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>знать</Name>
+            <Description>основные принципы административно-правовой защиты web-контента в телекоммуникационных системах</Description>
+            <EM_Type>Вопросы к экзамену</EM_Type>
+            <EvalulationIndicator>Полнота знаний</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
-            <Name>владеть</Name>
-            <Description>навыками использования  средства защиты web-контента от несанкционированного съема и утечки по техническим каналам; использовать средства охраны и безопасности, инженерной защиты и технической охраны объектов, систем видеонаблюдения.</Description>
-            <EM_Type>Прикладные задания</EM_Type>
-            <EvalulationIndicator>Наличие навыков</EvalulationIndicator>
+            <Name>уметь</Name>
+            <Description>уметь выбирать, адаптировать и применять необходимые алгоритмы при решении профессиональных задач защиты web-контента</Description>
+            <EM_Type>Стандартные задания</EM_Type>
+            <EvalulationIndicator>Наличие умений</EvalulationIndicator>
           </EvalulationMaterial>
           <EvalulationMaterial>
             <Name>владеть</Name>
