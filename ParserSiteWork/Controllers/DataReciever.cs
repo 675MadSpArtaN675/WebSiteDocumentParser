@@ -36,7 +36,6 @@ namespace ParserSiteWork.Controllers
             if (data is null)
                 return Content("Я ошибся!");
 
-            Console.WriteLine($"Competentions: {data.Competentions.Count};\nQuestions: {data.Questions.Count}\nPracticTasks: {data.PracticTasks.Count}");
             foreach (var item in data.Questions)
             {
                 if (item.Competention?.Name is not null)
@@ -53,40 +52,12 @@ namespace ParserSiteWork.Controllers
                 }
             }
 
-            string frame = "";
-            for (int i = 0; i < 128; i++)
-                frame += '=';
-
-            foreach (var competention in data.Competentions)
-                Console.WriteLine(competention);
-
-            Console.WriteLine(frame);
-
-            foreach (var question in data.Questions)
-                Console.WriteLine(question);
-
-            Console.WriteLine(frame);
-
-            foreach (var task in data.PracticTasks)
-                Console.WriteLine(task);
-
-            Console.WriteLine(frame);
-
             ISerialization xmlSerializer = new SerializeXML();
 
             SerializationData serializationData = new SerializationData();
             serializationData.SerializeData(data, "data.xml", xmlSerializer);
 
-            return Empty;
-        }
-
-        [HttpPost]
-        public IActionResult Test(ParsedDataBundle data)
-        {
-            Console.WriteLine(data);
-            Console.WriteLine($"Competentions: {data.Competentions.Count};\nQuestions: {data.Questions.Count}\nPracticTasks: {data.PracticTasks.Count}");
-
-            return Ok();
+            return Redirect("/Home/Index");
         }
     }
 }
