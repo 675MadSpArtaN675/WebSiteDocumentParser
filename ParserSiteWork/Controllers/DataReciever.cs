@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ParserSiteWork.Models;
-using DocsParserLib;
-using Serialization;
+using DocsParserLib.InputData;
+using DocsParserLib.Serialization;
+using DocsParserLib.Interfaces.Serialization;
+using DocsParserLib.DataClasses;
 
 namespace ParserSiteWork.Controllers
 {
@@ -31,7 +33,7 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditedDataRecieve( ParsedDataBundle data)
+        public IActionResult EditedDataRecieve(ParsedDataBundle data)
         {
             if (data is null)
                 return Content("Я ошибся!");

@@ -1,9 +1,11 @@
-﻿using DocsParserLib;
-using Serialization;
-using System.Text.RegularExpressions;
+﻿using DocsParserLib.InputData;
+using DocsParserLib.Parsers;
+using DocsParserLib.Interfaces.Serialization;
+using DocsParserLib.DataClasses;
+using DocsParserLib.Serialization;
 
 namespace ParserLibTest
-{ 
+{
     internal class Program
     {
         public static void Main(string[] args)
