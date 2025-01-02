@@ -1,8 +1,8 @@
 ﻿using DocsParserLib.InputData;
-using DocsParserLib.Parsers;
 using DocsParserLib.Interfaces.Serialization;
 using DocsParserLib.DataClasses;
 using DocsParserLib.Serialization;
+using DocsParserLib.Parsers.WordParser;
 
 namespace ParserLibTest
 {
@@ -11,17 +11,16 @@ namespace ParserLibTest
         public static void Main(string[] args)
         {
             // Тест 1 (Новое получение данных из парсеров
-            string line = Console.ReadLine() ?? "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ParserLibTest\\ОМ__ТЗWebК_2023.docx\\ОМ__ТЗWebК_2023.docx";
+            string? line = Console.ReadLine();
 
-            if (line == "")
-                line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ParserLibTest\\ОМ__ТЗWebК_2023.docx";
+            if (line is null || line.Trim() == "")
+                line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ__ТЗWebК_2023.docx";
 
             // "ОМ__ТЗWebК_2023.docx";
 
             Document doc = new Document(line);
 
             IDataOutput dataOutput = new DataOutput();
-
             ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
 
             string frame = "";
