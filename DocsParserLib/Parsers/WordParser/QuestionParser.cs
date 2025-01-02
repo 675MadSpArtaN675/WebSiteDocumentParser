@@ -33,7 +33,7 @@ namespace DocsParserLib.Parsers.WordParser
         /// </summary>
         /// <param name="document">Документ, из которого нужно спарсить данные</param>
         /// <param name="comp_parser">Парсер компетенций</param>
-        public QuestionParser(InputData.Document document, CompetentionParser comp_parser) : base(document)
+        public QuestionParser(InputData.WordDocument document, CompetentionParser comp_parser) : base(document)
         {
             if (comp_parser.Data is null)
                 comp_parser.Parse();
@@ -48,7 +48,7 @@ namespace DocsParserLib.Parsers.WordParser
         /// </summary>
         /// <param name="filename">Путь к документу, из которого нужно спарсить данные</param>
         /// <param name="comp_parser">Парсер компетенций</param>
-        public QuestionParser(string filename, CompetentionParser comp_parser) : this(new InputData.Document(filename), comp_parser)
+        public QuestionParser(string filename, CompetentionParser comp_parser) : this(new InputData.WordDocument(filename), comp_parser)
         { }
 
         /// <inheritdoc/>

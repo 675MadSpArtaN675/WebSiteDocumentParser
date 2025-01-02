@@ -15,7 +15,7 @@ namespace DocsParserLib.Serialization
         /// </summary>
         /// <param name="document">Документ для парсинга</param>
         /// <returns>Структура ParsedDataBundle с распарсенной информацией</returns>
-        public ParsedDataBundle GetParsedData(Document document)
+        public ParsedDataBundle GetParsedData(WordDocument document)
         {
             CompetentionParser c_parser = new CompetentionParser(document);
             QuestionParser q_parser = new QuestionParser(document, c_parser);

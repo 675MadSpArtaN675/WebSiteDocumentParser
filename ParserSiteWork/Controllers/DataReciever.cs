@@ -23,7 +23,7 @@ namespace ParserSiteWork.Controllers
 
             using (var stream = doc_data.OpenReadStream())
             {
-                Document doc = new Document(stream);
+                WordDocument doc = new WordDocument(stream);
 
                 IDataOutput dataOutput = new DataOutput();
                 ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);

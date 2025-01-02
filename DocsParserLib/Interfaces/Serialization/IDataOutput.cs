@@ -13,6 +13,6 @@ namespace DocsParserLib.Interfaces.Serialization
         /// </summary>
         /// <param name="document">Документ, который необходимо распарсить</param>
         /// <returns>Структура ParsedDataBundle с распарсенными данными</returns>
-        ParsedDataBundle GetParsedData(Document document);
+        ParsedDataBundle GetParsedData(WordDocument document);
     }
 }

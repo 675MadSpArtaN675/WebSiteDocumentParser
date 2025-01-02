@@ -29,8 +29,8 @@ namespace DocsParserLib.Parsers.WordParser
         /// <summary>
         /// Инициализирует экземпляр класса <see cref="CompetentionParser"/>
         /// </summary>
-        /// <param name="document">Экземпляр класса <see cref="Document"/>, обозсв начающий документ, из которого нужно спарсить компетенции</param>
-        public CompetentionParser(InputData.Document document) : base(document)
+        /// <param name="document">Экземпляр класса <see cref="WordDocument"/>, обозсв начающий документ, из которого нужно спарсить компетенции</param>
+        public CompetentionParser(InputData.WordDocument document) : base(document)
         {
             compets = new List<Competention>();
             Filters = new string[] { "ПЕРЕЧЕНЬ", "ПЛАНИРУЕМЫХ", "РЕЗУЛЬТАТОВ" };
@@ -40,7 +40,7 @@ namespace DocsParserLib.Parsers.WordParser
         /// Инициализирует экземпляр класса <see cref="CompetentionParser"/>
         /// </summary>
         /// <param name="filename">Путь и название файла, из которого нужно спарсить компетенции</param>
-        public CompetentionParser(string filename) : this(new InputData.Document(filename))
+        public CompetentionParser(string filename) : this(new InputData.WordDocument(filename))
         { }
 
         /// <inheritdoc/>

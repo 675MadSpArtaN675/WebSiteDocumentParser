@@ -18,7 +18,7 @@ namespace ParserLibTest
 
             // "ОМ__ТЗWebК_2023.docx";
 
-            Document doc = new Document(line);
+            WordDocument doc = new WordDocument(line);
 
             IDataOutput dataOutput = new DataOutput();
             ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
