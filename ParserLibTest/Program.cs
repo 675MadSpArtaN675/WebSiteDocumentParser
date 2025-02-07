@@ -14,7 +14,7 @@ namespace ParserLibTest
             string? line = Console.ReadLine();
 
             if (line is null || line.Trim() == "")
-                line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ__ТЗWebК_2023.docx";
+                line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf";
 
             // "ОМ__ТЗWebК_2023.docx";
 
