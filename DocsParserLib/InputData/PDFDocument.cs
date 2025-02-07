@@ -20,7 +20,7 @@ namespace DocsParserLib.InputData
         /// <inheritdoc/>
         public IEnumerable<string> GetData()
         {
-            return;
+            return null;
         }
 
         private void FindTableByTitle(string title)
