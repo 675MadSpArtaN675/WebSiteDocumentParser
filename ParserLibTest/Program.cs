@@ -10,18 +10,31 @@ namespace ParserLibTest
     {
         public static void Main(string[] args)
         {
-            // Тест 1 (Новое получение данных из парсеров
-            string? line = Console.ReadLine();
+            //TestParser();
 
-            if (line is null || line.Trim() == "")
-                line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf";
+            PDFDocument document = new("C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf");
 
-            // "ОМ__ТЗWebК_2023.docx";
+            foreach (var item in document.GetData())
+            {
+                Console.WriteLine($"{item}\n{item.Replace("  ", " ")}\n\n");
+            }
+        }
+
+        public static ParsedDataBundle TestParseWordFile()
+        {
+            string? line = "C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ__ТЗWebК_2023.docx";
 
             WordDocument doc = new WordDocument(line);
 
             IDataOutput dataOutput = new DataOutput();
             ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
+
+            return dataBundle;
+        }
+
+        public static void TestParser()
+        {
+            ParsedDataBundle dataBundle = TestParseWordFile();
 
             string frame = "";
             for (int i = 0; i < 128; i++)
@@ -41,8 +54,11 @@ namespace ParserLibTest
                 Console.WriteLine(task);
 
             Console.WriteLine(frame);
+        }
 
-            // Тест 2 (Новый подход в сеарилизации)
+        public static void Test2()
+        {
+            ParsedDataBundle dataBundle = TestParseWordFile();
 
             ISerialization xmlSerializer = new SerializeXML();
             ISerialization jsonSerializer = new SerializeJSON();
@@ -66,30 +82,6 @@ namespace ParserLibTest
             Console.WriteLine("Вопросы из JSON:");
             foreach (var question in jsonData.Questions)
                 Console.WriteLine(question);
-        }
-
-        public static void TestParser(CompetentionParser c_parser, QuestionParser q_parser, PracticTasksParser p_parser)
-        {
-            string frame = "";
-            for (int i = 0; i < 128; i++)
-                frame += '=';
-
-            Console.WriteLine(frame);
-
-            foreach (var item1 in c_parser.Data)
-                Console.WriteLine(item1);
-
-            Console.WriteLine(frame);
-
-            foreach (var item in q_parser.Data)
-                Console.WriteLine(item);
-
-            Console.WriteLine(frame);
-
-            foreach (var item in p_parser.Data)
-                Console.WriteLine(item);
-
-            Console.WriteLine(frame);
         }
 
 
