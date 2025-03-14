@@ -1,15 +1,10 @@
 ﻿namespace DataBaseParserWork
 {
-    public class DataWriter : IDataInteractor
+    public class DataWriter
     {
         public DataWriter()
         {
 
-        }
-
-        public void ConnectToDataBase()
-        {
-            string connectionString = $"Host=;Username=;Password=;Database=";
         }
     }
 }
