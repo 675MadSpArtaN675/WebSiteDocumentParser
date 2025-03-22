@@ -1,9 +1,4 @@
 ﻿using DocsParserLib.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DocsParserLib.DataClasses
 {
@@ -23,7 +18,7 @@ namespace DocsParserLib.DataClasses
         public bool ValidAnswer { get; set; }
 
         /// <summary>
-        /// Буква ответа. (Например, если ответ под номером 0, то его буква - А
+        /// Буква ответа. (Например, если ответ под номером 0, то его буква - А)
         /// </summary>
         public char AnswerLetter
         {

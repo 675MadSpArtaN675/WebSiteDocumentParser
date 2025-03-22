@@ -10,14 +10,14 @@ namespace ParserLibTest
     {
         public static void Main(string[] args)
         {
-            //TestParser();
+            TestParser();
 
-            PDFDocument document = new("C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf");
+            //PDFDocument document = new("C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf");
 
-            foreach (var item in document.GetData())
-            {
-                Console.WriteLine($"{item}\n{item.Replace("  ", " ")}\n\n");
-            }
+            //foreach (var item in document.GetData())
+            //{
+            //    Console.WriteLine($"{item}\n{item.Replace("  ", " ")}\n\n");
+            //}
         }
 
         public static ParsedDataBundle TestParseWordFile()
