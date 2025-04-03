@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsParserLib", "DocsParser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserSiteWork", "ParserSiteWork\ParserSiteWork.csproj", "{00309B7B-3023-434E-B3E2-B0279A05ABAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseWork", "DatabaseWork\DatabaseWork.csproj", "{BACFE6BE-9F69-42F7-A5D2-E100C1452E16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{00309B7B-3023-434E-B3E2-B0279A05ABAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00309B7B-3023-434E-B3E2-B0279A05ABAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00309B7B-3023-434E-B3E2-B0279A05ABAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACFE6BE-9F69-42F7-A5D2-E100C1452E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACFE6BE-9F69-42F7-A5D2-E100C1452E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACFE6BE-9F69-42F7-A5D2-E100C1452E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACFE6BE-9F69-42F7-A5D2-E100C1452E16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

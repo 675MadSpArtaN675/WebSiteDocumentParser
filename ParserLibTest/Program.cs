@@ -11,13 +11,6 @@ namespace ParserLibTest
         public static void Main(string[] args)
         {
             TestParser();
-
-            //PDFDocument document = new("C:\\Users\\Иван\\source\\repos\\WebSiteProject\\ОМ_ОВРиЭБ__2023.pdf");
-
-            //foreach (var item in document.GetData())
-            //{
-            //    Console.WriteLine($"{item}\n{item.Replace("  ", " ")}\n\n");
-            //}
         }
 
         public static ParsedDataBundle TestParseWordFile()
