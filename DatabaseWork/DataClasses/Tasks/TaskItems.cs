@@ -12,12 +12,16 @@ namespace DatabaseWork.DataClasses.Tasks
         public int IDSelect { get; set; }
         public string? SelectValue { get; set; }
         public bool SelectTrue { get; set; }
+
+        public Task_d TaskLink { get; set; }
     }
 
     public class ItemsAccordance
     {
         public int IDia { get; set; }
         public string? IAText { get; set; }
+
+        public Task_d TaskLink { get; set; }
     }
 
     public class FirstPartAccordance
@@ -25,6 +29,8 @@ namespace DatabaseWork.DataClasses.Tasks
         public int IDfpa { get; set; }
         public string? FPANumber { get; set; }
         public string? FPAValue { get; set; }
+
+        public Task_d TaskLink { get; set; }
     }
 
     public class SecondPartAccordance
@@ -33,6 +39,6 @@ namespace DatabaseWork.DataClasses.Tasks
         public string? SPANumber { get; set; }
         public string? SPAValue { get; set; }
 
-
+        public Task_d TaskLink { get; set; }
     }
 }

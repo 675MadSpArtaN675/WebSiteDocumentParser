@@ -12,5 +12,8 @@ namespace DatabaseWork.DataClasses
         public string? DisNumber { get; set; }
         public string? DisTitle { get; set; }
         public string? DisFinalSemestr { get; set; }
+
+        public Profile? R_Profile { get; set; }
+        public DisciplineCompetenceLink DCLink { get; set; }
     }
 }

@@ -12,5 +12,9 @@ namespace DatabaseWork.DataClasses
         public string? ProTitle { get; set; }
         public int ProYear { get; set; }
         public int ProAdminissionYear { get; set; }
+
+        public Discipline? Subject { get; set; }
+        public Speciality Spec { get; set; }
+        public Competence CompetenceLink { get; set; }
     }
 }

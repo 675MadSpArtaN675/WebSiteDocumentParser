@@ -12,7 +12,9 @@ namespace DatabaseWork.DataClasses
         public string? CompNumber { get; set; }
         public string? CompAnnotation { get; set; }
 
-        public TypeCompetence? CompType { get; set; }
+        public TypeCompetence CompType { get; set; }
+        public Profile ProfileLink { get; set; }
+        public DisciplineCompetenceLink DCLink { get; set; }
     }
 
     public class TypeCompetence
@@ -20,6 +22,6 @@ namespace DatabaseWork.DataClasses
         public int IDtc { get; set; }
         public string? TCTitle { get; set; }
 
-        public Competence? Competence { get; set; }
+        public Competence Competence { get; set; }
     }
 }

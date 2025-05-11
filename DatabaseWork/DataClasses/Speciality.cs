@@ -11,6 +11,10 @@ namespace DatabaseWork.DataClasses
         public int IDspec { get; set; }
         public string? SpecNumber { get; set; }
         public string? SpecTitle { get; set; }
+
+        public SpecGroup? SGroup { get; set; }
+        public Level? EdLevel { get; set; }
+        public Profile? ProfileLink { get; set; }
     }
 
     public class SpecGroup
@@ -18,11 +22,15 @@ namespace DatabaseWork.DataClasses
         public int IDsg { get; set; }
         public string? SGNumber { get; set; }
         public string? SGTitle { get; set; }
+
+        public Speciality? Spec { get; set; }
     }
 
     public class Level
     {
         public int IDlv { get; set; }
         public string? LvTitle { get; set; }
+
+        public Speciality? Spec { get; set; }
     }
 }
