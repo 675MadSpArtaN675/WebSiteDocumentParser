@@ -1,14 +1,27 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+using DatabaseWork.DataClasses.Tasks;
 using DatabaseWork.DataClasses;
+using DatabaseWork.Interfaces;
+using DatabaseWork.DataClasses.Configurators;
 
 namespace DatabaseWork
 {
-    // 
     public class DatabaseContext : DbContext
     {
-        public DbSet<Task_d> tasks { get; set; } = null!;
-        public DbSet<TypeTask> task_types { get; set; } = null!;
-        public DbSet<SelectedItems> selectedItems { get; set; } = null!;
+        public DbSet<Task_d> Tasks { get; set; } = null!;
+        public DbSet<TypeTask> TaskTypes { get; set; } = null!;
+
+        public DbSet<Competence> Competences { get; set; } = null!;
+        public DbSet<TypeCompetence> TypesOfCompetences { get; set; } = null!;
+
+        public DbSet<Discipline> Disciplines { get; set; }
+        public DbSet<Profile> Profiles { get; set; }
+
+        public DbSet<DisciplineCompetenceLink> FullDiscipline { get; set; }
+        public DbSet<TaskDesciplineCompetenceLink> FullTDC { get; set; }
+
 
         private readonly string _server_ip;
 
@@ -25,7 +38,15 @@ namespace DatabaseWork
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            AbstractTableConfigurator[] configurator_modules = new AbstractTableConfigurator[]
+            {
+                new SubjectTablesConfigurator(modelBuilder),
+                new TaskTablesConfigurator(modelBuilder)
+            };
 
+            TotalConfigurator configurator = new TotalConfigurator(modelBuilder, configurator_modules);
+
+            configurator.Configure();
         }
     }
 }
