@@ -3,7 +3,6 @@ using DatabaseWork.DataClasses;
 
 namespace DatabaseWork
 {
-    // 
     public class DatabaseContext : DbContext
     {
         public DbSet<Task_d> tasks { get; set; } = null!;
