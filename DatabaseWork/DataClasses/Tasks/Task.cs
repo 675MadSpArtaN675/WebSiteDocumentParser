@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DatabaseWork.DataClasses
+namespace DatabaseWork.DataClasses.Tasks
 {
     public class Task_d
     {

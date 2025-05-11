@@ -11,11 +11,15 @@ namespace DatabaseWork.DataClasses
         public int IDcomp { get; set; }
         public string? CompNumber { get; set; }
         public string? CompAnnotation { get; set; }
+
+        public TypeCompetence? CompType { get; set; }
     }
 
     public class TypeCompetence
     {
         public int IDtc { get; set; }
         public string? TCTitle { get; set; }
+
+        public Competence? Competence { get; set; }
     }
 }

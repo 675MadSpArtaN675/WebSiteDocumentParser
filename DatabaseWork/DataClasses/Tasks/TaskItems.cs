@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseWork.DataClasses
+namespace DatabaseWork.DataClasses.Tasks
 {
     public class SelectedItems
     {
