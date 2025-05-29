@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DatabaseWork.DataClasses;
 using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
     public class CompetenceService : AbstractService<Competence>
     {
