@@ -16,6 +16,9 @@ namespace DatabaseWork
         public DbSet<Competence> Competences { get; set; } = null!;
         public DbSet<TypeCompetence> TypesOfCompetences { get; set; } = null!;
 
+        public DbSet<SpecGroup> SpecGroups { get; set; } = null!;
+        public DbSet<Level> Levels { get; set; } = null!;
+        public DbSet<Speciality> Specialities { get; set; } = null!;
         public DbSet<Discipline> Disciplines { get; set; }
         public DbSet<Profile> Profiles { get; set; }
 

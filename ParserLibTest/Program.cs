@@ -4,8 +4,11 @@ using DocsParserLib.DataClasses;
 using DocsParserLib.Serialization;
 using DocsParserLib.Parsers.WordParser;
 
+using System.Linq.Expressions;
+
 namespace ParserLibTest
 {
+
     internal class Program
     {
         public static void Main(string[] args)

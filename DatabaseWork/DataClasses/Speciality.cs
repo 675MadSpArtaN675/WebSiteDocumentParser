@@ -16,21 +16,4 @@ namespace DatabaseWork.DataClasses
         public Level? EdLevel { get; set; }
         public Profile? ProfileLink { get; set; }
     }
-
-    public class SpecGroup
-    {
-        public int IDsg { get; set; }
-        public string? SGNumber { get; set; }
-        public string? SGTitle { get; set; }
-
-        public Speciality? Spec { get; set; }
-    }
-
-    public class Level
-    {
-        public int IDlv { get; set; }
-        public string? LvTitle { get; set; }
-
-        public Speciality? Spec { get; set; }
-    }
 }

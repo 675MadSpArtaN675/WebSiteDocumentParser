@@ -15,8 +15,4 @@
     <ProjectReference Include="..\DocsParserLib\DocsParserLib.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DataProcessors\" />
-  </ItemGroup>
-
 </Project>
