@@ -22,6 +22,11 @@ namespace DatabaseWork
         public DbSet<Discipline> Disciplines { get; set; }
         public DbSet<Profile> Profiles { get; set; }
 
+        public DbSet<SelectedItems> SelectedItems { get; set; }
+        public DbSet<ItemsAccordance> ItemsAccordance { get; set; }
+        public DbSet<FirstPartAccordance> FirstPartsAccordances { get; set; }
+        public DbSet<SecondPartAccordance> SecondPartsAccordances { get; set; }
+
         public DbSet<DisciplineCompetenceLink> FullDiscipline { get; set; }
         public DbSet<TaskDesciplineCompetenceLink> FullTDC { get; set; }
 
