@@ -46,10 +46,9 @@ namespace DatabaseWork
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            AbstractTableConfigurator[] configurator_modules = new AbstractTableConfigurator[]
-            {
+            AbstractTableConfigurator[] configurator_modules = {
                 new SubjectTablesConfigurator(modelBuilder),
-                new TaskTablesConfigurator(modelBuilder)
+                new TaskTablesConfigurator(modelBuilder),
             };
 
             TotalConfigurator configurator = new TotalConfigurator(modelBuilder, configurator_modules);
