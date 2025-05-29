@@ -1,8 +1,9 @@
 ﻿using System.Linq.Expressions;
 using DatabaseWork.DataClasses;
 using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
+using DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
     public class ProfileService : AbstractService<Profile>
     {
@@ -13,7 +14,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors
 
         public override Profile Add(Profile entity)
         {
-            int free_id = Finder.FindFreeNumbers<Profile>(_storage, sg => sg.IDpro)[0];
+            int free_id = Finder.FindFreeNumbers(_storage, sg => sg.IDpro)[0];
             entity.IDpro = free_id;
 
             return entity;

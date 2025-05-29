@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors

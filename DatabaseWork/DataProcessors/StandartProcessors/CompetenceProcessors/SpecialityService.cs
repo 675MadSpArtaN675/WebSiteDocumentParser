@@ -1,8 +1,9 @@
 ﻿using System.Linq.Expressions;
 using DatabaseWork.DataClasses;
 using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
+using DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
     public class SpecialityService : AbstractService<Speciality>
     {
@@ -17,7 +18,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors
 
         public override Speciality Add(Speciality entity)
         {
-            int free_id = Finder.FindFreeNumbers<Speciality>(_context.Specialities, sp => sp.IDspec)[0];
+            int free_id = Finder.FindFreeNumbers(_context.Specialities, sp => sp.IDspec)[0];
             entity.IDspec = free_id;
 
             _storage.Add(entity);

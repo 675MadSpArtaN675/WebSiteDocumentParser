@@ -2,8 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using DatabaseWork.DataClasses;
 using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
+using DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
     public class SpecGroupService : AbstractService<SpecGroup>
     {
@@ -12,7 +13,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors
 
         public override SpecGroup Add(SpecGroup entity)
         {
-            int free_id = Finder.FindFreeNumbers<SpecGroup>(_context.SpecGroups, sg => sg.IDsg)[0];
+            int free_id = Finder.FindFreeNumbers(_context.SpecGroups, sg => sg.IDsg)[0];
             entity.IDsg = free_id;
 
             _storage.Add(entity);

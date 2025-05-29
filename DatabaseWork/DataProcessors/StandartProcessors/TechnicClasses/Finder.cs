@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses
 {
     public class Finder
     {

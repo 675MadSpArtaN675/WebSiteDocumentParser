@@ -3,7 +3,7 @@ using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace DatabaseWork.DataProcessors.StandartProcessors
+namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
     public class LevelService : AbstractService<Level>
     {
