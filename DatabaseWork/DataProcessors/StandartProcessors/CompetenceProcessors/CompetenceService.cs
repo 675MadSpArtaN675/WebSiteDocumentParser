@@ -36,6 +36,8 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
             if (typeCompetence != null)
                 entity.CompType = typeCompetence;
 
+            _storage.Update(entity);
+
             return entity;
         }
 
@@ -43,6 +45,8 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
         {
             if (title != null)
                 entity.CompNumber = title;
+
+            _storage.Update(entity);
 
             return entity;
         }

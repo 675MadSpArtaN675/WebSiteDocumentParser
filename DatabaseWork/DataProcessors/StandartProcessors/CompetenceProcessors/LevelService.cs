@@ -22,6 +22,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
         public Level? UpdateLevelByTitle(Level level, string lv_title)
         {
             level.LvTitle = lv_title;
+            _storage.Update(level);
             
             return level;
         }
@@ -29,6 +30,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
         public Level? UpdateLevelById(Level level, string lv_title)
         {
             level.LvTitle = lv_title;
+            _storage.Update(level);
 
             return level;
         }

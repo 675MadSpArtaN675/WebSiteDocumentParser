@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using DatabaseWork.DataClasses;
 using DatabaseWork.DataProcessors.StandartProcessors.AbstractProcessors;
 using DatabaseWork.DataProcessors.StandartProcessors.TechnicClasses;
+using DocumentFormat.OpenXml.Vml.Office;
 
 namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 {
@@ -20,18 +21,20 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
 
             return entity;
         }
-        public SpecGroup? UpdateNumber(SpecGroup result, string new_number)
+        public SpecGroup? UpdateNumber(SpecGroup entity, string new_number)
         {
-            result.SGNumber = new_number;
+            entity.SGNumber = new_number;
+            _storage.Update(entity);
 
-            return result;
+            return entity;
         }
 
-        public SpecGroup? UpdateTitle(SpecGroup result, string new_title)
+        public SpecGroup? UpdateTitle(SpecGroup entity, string new_title)
         {
-            result.SGTitle = new_title;
+            entity.SGTitle = new_title;
+            _storage.Update(entity);
 
-            return result;
+            return entity;
         }
     }
 }

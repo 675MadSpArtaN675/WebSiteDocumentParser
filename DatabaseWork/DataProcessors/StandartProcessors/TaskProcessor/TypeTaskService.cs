@@ -14,6 +14,8 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.TaskProcessor
             int id = FindFreeNumber(e => e.Idtt);
             entity.Idtt = id;
 
+            _storage.Add(entity);
+
             return entity;
         }
     }

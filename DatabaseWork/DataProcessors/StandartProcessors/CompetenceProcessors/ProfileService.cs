@@ -17,24 +17,32 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
             int free_id = Finder.FindFreeNumbers(_storage, sg => sg.IDpro)[0];
             entity.IDpro = free_id;
 
+            _storage.Add(entity);
+
             return entity;
         }
 
         public Profile UpdateTitle(Profile entity, string title)
         {
             entity.ProTitle = title;
+            _storage.Update(entity);
+
             return entity;
         }
 
         public Profile UpdateYear(Profile entity, int year)
         {
             entity.ProYear = year;
+            _storage.Update(entity);
+
             return entity;
         }
 
         public Profile UpdateAdminissionYear(Profile entity, int adminission_year)
         {
             entity.ProAdminissionYear = adminission_year;
+            _storage.Update(entity);
+
             return entity;
         }
     }

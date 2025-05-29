@@ -12,6 +12,18 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.TaskProcessor.TaskItems
         {
             entity.IDSelect = FindFreeNumber(si => entity.IDSelect);
 
+            _storage.Add(entity);
+
+            return entity;
+        }
+
+        public SelectedItems UpdateLinks(SelectedItems entity, Task_d? task = null)
+        {
+            if (task != null)
+                entity.TaskLink = task;
+
+            _storage.Update(entity);
+
             return entity;
         }
     }

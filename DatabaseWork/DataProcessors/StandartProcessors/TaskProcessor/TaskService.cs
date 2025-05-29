@@ -26,6 +26,8 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.TaskProcessor
             if (typeTasks != null)
                 entity.TaskType = typeTasks;
 
+            _storage.Update(entity);
+
             return entity;
         }
     }

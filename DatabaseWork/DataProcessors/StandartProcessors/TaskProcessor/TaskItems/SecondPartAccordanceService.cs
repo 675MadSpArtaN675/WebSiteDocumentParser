@@ -13,6 +13,18 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.TaskProcessor.TaskItems
             int free_id = FindFreeNumber(ia => ia.IDspa);
             entity.IDspa = free_id;
 
+            _storage.Add(entity);
+
+            return entity;
+        }
+
+        public SecondPartAccordance UpdateLinks(SecondPartAccordance entity, Task_d? task = null)
+        {
+            if (task != null)
+                entity.TaskLink = task;
+
+            _storage.Update(entity);
+
             return entity;
         }
     }

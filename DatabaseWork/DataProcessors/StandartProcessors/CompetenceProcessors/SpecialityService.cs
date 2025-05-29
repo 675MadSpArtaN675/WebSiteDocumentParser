@@ -34,12 +34,15 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
             if (specGroup != null)
                 entity.SGroup = specGroup;
 
+            _storage.Update(entity);
+
             return entity;
         }
 
         public Speciality? UpdateTitle(Speciality entity, string title)
         {
             entity.SpecTitle = title;
+            _storage.Update(entity);
 
             return entity;
         }
@@ -47,6 +50,7 @@ namespace DatabaseWork.DataProcessors.StandartProcessors.CompetenceProcessors
         public Speciality? UpdateNumber(Speciality entity, string number)
         {
             entity.SpecNumber = number;
+            _storage.Update(entity);
 
             return entity;
         }
