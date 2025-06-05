@@ -9,6 +9,7 @@ namespace DatabaseWork.DataClasses.Tasks
 {
     public class SelectedItems
     {
+        [Key]
         public int IDSelect { get; set; }
         public string? SelectValue { get; set; }
         public bool SelectTrue { get; set; }
@@ -18,6 +19,7 @@ namespace DatabaseWork.DataClasses.Tasks
 
     public class ItemsAccordance
     {
+        [Key]
         public int IDia { get; set; }
         public string? IAText { get; set; }
 
@@ -26,6 +28,7 @@ namespace DatabaseWork.DataClasses.Tasks
 
     public class FirstPartAccordance
     {
+        [Key]
         public int IDfpa { get; set; }
         public string? FPANumber { get; set; }
         public string? FPAValue { get; set; }
@@ -35,6 +38,7 @@ namespace DatabaseWork.DataClasses.Tasks
 
     public class SecondPartAccordance
     {
+        [Key]
         public int IDspa { get; set; }
         public string? SPANumber { get; set; }
         public string? SPAValue { get; set; }

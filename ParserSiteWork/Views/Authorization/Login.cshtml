@@ -1,0 +1,12 @@
+﻿@model AutorizationModel;
+
+
+<form asp-action="Login" asp-controller="Authorization">
+	<label asp-for="Login"/>
+	<input asp-for="Login" class="form-control"/>
+
+	<label asp-for="Password"/>
+	<input asp-for="Password" class="form-control"/>
+
+	<input type="submit" value="Войти"/>
+</form>

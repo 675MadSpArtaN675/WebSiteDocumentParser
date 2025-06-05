@@ -48,7 +48,7 @@ namespace DatabaseWork.DataClasses.Configurators
                    .HasKey(s => s.IDspec);
 
             builder.Entity<Speciality>()
-                   .HasOne(s => s.SGroup)
+                   .HasOne(s => s.EdLevel)
                    .WithOne(lv => lv.Spec)
                    .HasForeignKey<Level>(lv => lv.IDlv);
 

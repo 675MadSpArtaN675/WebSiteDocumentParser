@@ -33,16 +33,26 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditedDataRecieve(ParsedDataBundle data)
+        public IActionResult EditedDataRecieve(ParsedDataBundle data, string[] old_names)
         {
             if (data is null)
                 return Content("Я ошибся!");
+
+            Dictionary<string, string> names_comparsion = new Dictionary<string, string>();
+
+            int i = 0;
+            foreach (var item in data.Competentions)
+            {
+                names_comparsion[old_names[i]] = item.Name;
+                i++;
+            }
 
             foreach (var item in data.Questions)
             {
                 if (item.Competention?.Name is not null)
                 {
-                    item.Competention = data.GetCompetentionByName(item.Competention.Name) ?? new Competention("None", -1);
+                    string name = names_comparsion[item.Competention.Name];
+                    item.Competention = data.GetCompetentionByName(name) ?? new Competention("None", -1);
                 }
             }
 
@@ -50,7 +60,8 @@ namespace ParserSiteWork.Controllers
             {
                 if (item.Competention?.Name is not null)
                 {
-                    item.Competention = data.GetCompetentionByName(item.Competention.Name) ?? new Competention("None", -1);
+                    string name = names_comparsion[item.Competention.Name];
+                    item.Competention = data.GetCompetentionByName(name) ?? new Competention("None", -1);
                 }
             }
 

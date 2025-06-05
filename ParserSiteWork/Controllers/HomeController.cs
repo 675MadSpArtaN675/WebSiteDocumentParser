@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+
 using ParserSiteWork.Models;
 using DocsParserLib;
 using DocsParserLib.Serialization;
@@ -17,7 +19,10 @@ namespace ParserSiteWork.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null);
+                return View();
+
+            return View("Authorization/Login");
         }
     }
 }

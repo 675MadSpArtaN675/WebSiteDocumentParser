@@ -1,6 +1,10 @@
 ﻿using DatabaseWork.DataClasses.Tasks;
 using DatabaseWork.Interfaces;
+
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
+
 namespace DatabaseWork.DataClasses.Configurators
 {
     public class TotalConfigurator : AbstractTableConfigurator
@@ -16,6 +20,7 @@ namespace DatabaseWork.DataClasses.Configurators
         {
             StartConfiguration();
             FinalConfigure();
+            AutorizationConfigure();
         }
 
         private void StartConfiguration()
@@ -26,6 +31,25 @@ namespace DatabaseWork.DataClasses.Configurators
             {
                 tbl_configurator.Configure();
             }
+        }
+
+        private void AutorizationConfigure()
+        {
+            _builder.Entity<User>()
+                .HasKey(u => u.IDuser);
+
+            _builder.Entity<Role>()
+                .HasKey(r => r.IDrol);
+
+            _builder.Entity<User>()
+                .HasOne(u => u.RoleLink)
+                .WithMany(r => r.UserLink)
+                .HasForeignKey("IDrol");
+
+            Role[] roles = { new Role { IDrol = 2, Name = "user" }, new Role { IDrol = 1, Name = "admin" } };
+
+            _builder.Entity<Role>().HasData(roles);
+            _builder.Entity<User>().HasData(new { IDuser = 1, UserName = "admin", Password = Cryptor.HashPasswordSHA512("9524"), IDrol = 2 });
         }
 
         private void FinalConfigure()
@@ -61,7 +85,7 @@ namespace DatabaseWork.DataClasses.Configurators
                 .HasForeignKey<Competence>(c => c.IDcomp);
 
             builder.Entity<DisciplineCompetenceLink>()
-                .HasOne(d => d.CompetenceLink)
+                .HasOne(d => d.DisciplineLink)
                 .WithOne(ds => ds.DCLink)
                 .HasForeignKey<Discipline>(ds => ds.IDdis);
         }

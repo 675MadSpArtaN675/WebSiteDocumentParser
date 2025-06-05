@@ -3,6 +3,7 @@
 	string name = (string)(ViewData["BaseNamesModule"] ?? "");
 	HtmlNamesFormatter competentionNames = new HtmlNamesFormatter(name, "Competentions", "EvalulationMaterial");
 }
+
 <h2>Компетенции</h2>
 
 <table>
@@ -24,6 +25,7 @@
 			</td>
 			<td rowspan="4">
 				@Html.TextArea(competentionNames.GetCompetentionComponent(["Name"], i), Model[i].Name, new { @value = item.Name.ToString() })
+				<input type="hidden" name="old_names[@i]" value="@Model[i].Name" />
 			</td>
 
 			@for (int j = 0; j < item.EvalulationMaterial.Count; j++)

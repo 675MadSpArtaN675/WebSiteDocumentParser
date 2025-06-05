@@ -19,19 +19,24 @@ namespace DatabaseWork
         public DbSet<SpecGroup> SpecGroups { get; set; } = null!;
         public DbSet<Level> Levels { get; set; } = null!;
         public DbSet<Speciality> Specialities { get; set; } = null!;
-        public DbSet<Discipline> Disciplines { get; set; }
-        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Discipline> Disciplines { get; set; } = null!;
+        public DbSet<Profile> Profiles { get; set; } = null!;
 
-        public DbSet<SelectedItems> SelectedItems { get; set; }
-        public DbSet<ItemsAccordance> ItemsAccordance { get; set; }
-        public DbSet<FirstPartAccordance> FirstPartsAccordances { get; set; }
-        public DbSet<SecondPartAccordance> SecondPartsAccordances { get; set; }
+        public DbSet<SelectedItems> SelectedItems { get; set; } = null!;
+        public DbSet<ItemsAccordance> ItemsAccordance { get; set; } = null!;
+        public DbSet<FirstPartAccordance> FirstPartsAccordances { get; set; } = null!;
+        public DbSet<SecondPartAccordance> SecondPartsAccordances { get; set; } = null!;
 
-        public DbSet<DisciplineCompetenceLink> FullDiscipline { get; set; }
-        public DbSet<TaskDesciplineCompetenceLink> FullTDC { get; set; }
+        public DbSet<DisciplineCompetenceLink> FullDiscipline { get; set; } = null!;
+        public DbSet<TaskDesciplineCompetenceLink> FullTDC { get; set; } = null!;
 
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Role> Roles { get; set; } = null!;
 
         private readonly string _server_ip;
+
+        public DatabaseContext() : this("localhost")
+        { }
 
         public DatabaseContext(string server_ip)
         {
