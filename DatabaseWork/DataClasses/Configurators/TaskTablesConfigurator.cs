@@ -20,28 +20,28 @@ namespace DatabaseWork.DataClasses.Configurators
 
         private void TasksUtilityConfigure(ModelBuilder builder)
         {
-            builder.Entity<SelectedItems>()
-                .HasOne(d => d.TaskLink)
-                .WithOne(t => t.SItems)
-                .HasForeignKey<Task_d>(t => t.IDtask)
+            builder.Entity<Task_d>()
+                .HasMany(d => d.SItems)
+                .WithOne(t => t.TaskLink)
+                .HasForeignKey("IDtask")
                 .IsRequired();
 
-            builder.Entity<ItemsAccordance>()
-                .HasOne(d => d.TaskLink)
-                .WithOne(t => t.ItAccordance)
-                .HasForeignKey<Task_d>(t => t.IDtask)
+            builder.Entity<Task_d>()
+                .HasMany(d => d.ItAccordance)
+                .WithOne(t => t.TaskLink)
+                .HasForeignKey("IDtask")
                 .IsRequired();
 
-            builder.Entity<FirstPartAccordance>()
-                .HasOne(d => d.TaskLink)
-                .WithOne(t => t.FPAccordance)
-                .HasForeignKey<Task_d>(t => t.IDtask)
+            builder.Entity<Task_d>()
+                .HasMany(d => d.FPAccordance)
+                .WithOne(t => t.TaskLink)
+                .HasForeignKey("IDtask")
                 .IsRequired();
 
-            builder.Entity<SecondPartAccordance>()
-                .HasOne(d => d.TaskLink)
-                .WithOne(t => t.SPAccordance)
-                .HasForeignKey<Task_d>(t => t.IDtask)
+            builder.Entity<Task_d>()
+                .HasMany(d => d.SPAccordance)
+                .WithOne(t => t.TaskLink)
+                .HasForeignKey("IDtask")
                 .IsRequired();
         }
 
@@ -50,10 +50,10 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<Task_d>()
                 .HasKey(t => t.IDtask);
 
-            builder.Entity<Task_d>()
-                .HasOne(t => t.TaskType)
-                .WithOne(tt => tt.TaskLink)
-                .HasForeignKey<TypeTask>(tt => tt.Idtt);
+            builder.Entity<TypeTask>()
+                .HasMany(t => t.TaskLink)
+                .WithOne(tt => tt.TaskType)
+                .HasForeignKey("Idtt");
         }
 
     }

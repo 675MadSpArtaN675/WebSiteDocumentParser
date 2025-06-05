@@ -1,4 +1,5 @@
 ﻿using DatabaseWork.DataClasses.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace DatabaseWork.DataClasses
 {
@@ -6,7 +7,10 @@ namespace DatabaseWork.DataClasses
     {
         public int IDtdc { get; set; }
 
+        [Required]
         public Task_d TaskLink { get; set; }
+
+        [Required]
         public DisciplineCompetenceLink FullDCLink { get; set; }
     }
 }

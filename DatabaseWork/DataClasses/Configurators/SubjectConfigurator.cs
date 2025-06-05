@@ -27,8 +27,8 @@ namespace DatabaseWork.DataClasses.Configurators
 
             builder.Entity<Profile>()
                 .HasOne(p => p.Spec)
-                .WithOne(s => s.ProfileLink)
-                .HasForeignKey<Speciality>(s => s.IDspec);
+                .WithMany(s => s.ProfileLink)
+                .HasForeignKey("IDspec");
         }
 
         private void DisciplineConfigure(ModelBuilder builder)
@@ -36,10 +36,10 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<Discipline>()
                 .HasKey(d => d.IDdis);
 
-            builder.Entity<Discipline>()
-                .HasOne(d => d.R_Profile)
-                .WithOne(p => p.Subject)
-                .HasForeignKey<Profile>(p => p.IDpro);
+            builder.Entity<Profile>()
+                .HasMany(d => d.Subject)
+                .WithOne(p => p.R_Profile)
+                .HasForeignKey("IDpro");
         }
 
         private void SpecialityConfigure(ModelBuilder builder)
@@ -47,15 +47,15 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<Speciality>()
                    .HasKey(s => s.IDspec);
 
-            builder.Entity<Speciality>()
-                   .HasOne(s => s.EdLevel)
-                   .WithOne(lv => lv.Spec)
-                   .HasForeignKey<Level>(lv => lv.IDlv);
+            builder.Entity<Level>()
+                   .HasOne(s => s.Spec)
+                   .WithOne(lv => lv.EdLevel)
+                   .HasForeignKey<Speciality>("IDlv");
 
-            builder.Entity<Speciality>()
-                .HasOne(s => s.SGroup)
-                .WithOne(lv => lv.Spec)
-                .HasForeignKey<SpecGroup>(lv => lv.IDsg);
+            builder.Entity<SpecGroup>()
+                .HasOne(s => s.Spec)
+                .WithOne(lv => lv.SGroup)
+                .HasForeignKey<Speciality>("IDsg");
         }
 
         private void CompetenceConfigure(ModelBuilder builder)
@@ -63,16 +63,16 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<Competence>()
                 .HasKey(p => p.IDcomp);
 
-            builder.Entity<Competence>()
-                .HasOne(p => p.CompType)
-                .WithOne(pp => pp.Competence)
-                .HasForeignKey<TypeCompetence>(pp => pp.IDtc)
+            builder.Entity<TypeCompetence>()
+                .HasMany(p => p.Competence)
+                .WithOne(pp => pp.CompType)
+                .HasForeignKey("IDtc")
                 .IsRequired();
 
-            builder.Entity<Competence>()
-                .HasOne(c => c.ProfileLink)
-                .WithOne(p => p.CompetenceLink)
-                .HasForeignKey<Profile>(p => p.IDpro);
+            builder.Entity<Profile>()
+                .HasMany(c => c.CompetenceLink)
+                .WithOne(p => p.ProfileLink)
+                .HasForeignKey("IDpro");
         }
     }
 }

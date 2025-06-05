@@ -15,4 +15,8 @@
     <ProjectReference Include="..\DocsParserLib\DocsParserLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TypeConverters\" />
+  </ItemGroup>
+
 </Project>

@@ -11,13 +11,13 @@
         public TypeTask? TaskType { get; set; }
 
 
-        public SelectedItems SItems { get; set; }
+        public List<SelectedItems> SItems { get; set; }
 
-        public ItemsAccordance ItAccordance { get; set; }
-        public FirstPartAccordance FPAccordance { get; set; }
-        public SecondPartAccordance SPAccordance { get; set; }
+        public List<ItemsAccordance> ItAccordance { get; set; }
+        public List<FirstPartAccordance> FPAccordance { get; set; }
+        public List<SecondPartAccordance> SPAccordance { get; set; }
 
-        public TaskDesciplineCompetenceLink TDCLink { get; set; }
+        public List<TaskDesciplineCompetenceLink> TDCLink { get; set; }
 
     }
 
@@ -30,6 +30,6 @@
         public string? TTGradingGuide { get; set; }
         public string? TTGradingRules { get; set; }
 
-        public Task_d? TaskLink { get; set; }
+        public List<Task_d>? TaskLink { get; set; }
     }
 }

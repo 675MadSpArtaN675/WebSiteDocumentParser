@@ -63,15 +63,15 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<TaskDesciplineCompetenceLink>()
                 .HasKey(tdcl => tdcl.IDtdc);
 
-            builder.Entity<TaskDesciplineCompetenceLink>()
-                .HasOne(tdcl => tdcl.TaskLink)
-                .WithOne(t => t.TDCLink)
-                .HasForeignKey<Task_d>(t => t.IDtask);
+            builder.Entity<Task_d>()
+                .HasMany(tdcl => tdcl.TDCLink)
+                .WithOne(t => t.TaskLink)
+                .HasForeignKey("IDtask");
 
-            builder.Entity<TaskDesciplineCompetenceLink>()
-                .HasOne(tdcl => tdcl.FullDCLink)
-                .WithOne(dc => dc.TDCLink)
-                .HasForeignKey<DisciplineCompetenceLink>(dc => dc.IDdc);
+            builder.Entity<DisciplineCompetenceLink>()
+                .HasMany(tdcl => tdcl.TDCLink)
+                .WithOne(dc => dc.FullDCLink)
+                .HasForeignKey("IDdc");
         }
 
         private void CompetenceDisciplineLinkConfigre(ModelBuilder builder)
@@ -79,15 +79,15 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<DisciplineCompetenceLink>()
                 .HasKey(dcl => dcl.IDdc);
 
-            builder.Entity<DisciplineCompetenceLink>()
-                .HasOne(d => d.CompetenceLink)
-                .WithOne(c => c.DCLink)
-                .HasForeignKey<Competence>(c => c.IDcomp);
+            builder.Entity<Competence>()
+                .HasMany(d => d.DCLink)
+                .WithOne(c => c.CompetenceLink)
+                .HasForeignKey("IDcomp");
 
-            builder.Entity<DisciplineCompetenceLink>()
-                .HasOne(d => d.DisciplineLink)
-                .WithOne(ds => ds.DCLink)
-                .HasForeignKey<Discipline>(ds => ds.IDdis);
+            builder.Entity<Discipline>()
+                .HasMany(d => d.DCLink)
+                .WithOne(ds => ds.DisciplineLink)
+                .HasForeignKey("IDdis");
         }
 
         private void TinyTablesConfigure(ModelBuilder builder)
