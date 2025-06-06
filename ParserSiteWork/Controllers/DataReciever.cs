@@ -1,19 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+
 using ParserSiteWork.Models;
-using DocsParserLib.InputData;
-using DocsParserLib.Serialization;
-using DocsParserLib.Interfaces.Serialization;
+
+using DatabaseWork.TypeConverters;
 using DocsParserLib.DataClasses;
+using DocsParserLib.InputData;
+using DocsParserLib.Interfaces.Serialization;
+using DocsParserLib.Serialization;
+using DatabaseWork.TypeConverters.DataClasses;
+using DatabaseWork;
 
 namespace ParserSiteWork.Controllers
 {
     public class DataRecieverController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly DatabaseContext _db;
 
-        public DataRecieverController(ILogger<HomeController> logger)
+        public DataRecieverController(ILogger<HomeController> logger, DatabaseContext database)
         {
             _logger = logger;
+            _db = database;
         }
 
         [HttpPost]
@@ -38,15 +45,25 @@ namespace ParserSiteWork.Controllers
             if (data is null)
                 return Content("Я ошибся!");
 
-            Dictionary<string, string> names_comparsion = new Dictionary<string, string>();
+            Dictionary<string, string> names_comparsion = CompareOldNamesToNewNames(data, old_names);
 
-            int i = 0;
-            foreach (var item in data.Competentions)
-            {
-                names_comparsion[old_names[i]] = item.Name;
-                i++;
-            }
+            ParsedDataBundleConverter conv = new ParsedDataBundleConverter();
+            ConvertedDataBundle bundle = conv.Convert(data);
 
+            _db.Tasks.AddRange(bundle.Tasks);
+            _db.Competences.AddRange(bundle.Competences);
+            _db.Disciplines.AddRange(bundle.Discplines);
+
+            _db.SaveChanges();
+
+            FixData(data, names_comparsion);
+            SerializeToXML(data);
+
+            return Redirect("/Home/Index");
+        }
+
+        private static void FixData(ParsedDataBundle data, Dictionary<string, string> names_comparsion)
+        {
             foreach (var item in data.Questions)
             {
                 if (item.Competention?.Name is not null)
@@ -64,13 +81,28 @@ namespace ParserSiteWork.Controllers
                     item.Competention = data.GetCompetentionByName(name) ?? new Competention("None", -1);
                 }
             }
+        }
 
+        private static Dictionary<string, string> CompareOldNamesToNewNames(ParsedDataBundle data, string[] old_names)
+        {
+            Dictionary<string, string> names_comparsion = new Dictionary<string, string>();
+
+            int i = 0;
+            foreach (var item in data.Competentions)
+            {
+                names_comparsion[old_names[i]] = item.Name;
+                i++;
+            }
+
+            return names_comparsion;
+        }
+
+        private static void SerializeToXML(ParsedDataBundle data)
+        {
             ISerialization xmlSerializer = new SerializeXML();
 
             SerializationData serializationData = new SerializationData();
             serializationData.SerializeData(data, "data.xml", xmlSerializer);
-
-            return Redirect("/Home/Index");
         }
     }
 }

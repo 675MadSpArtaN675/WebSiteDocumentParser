@@ -80,6 +80,24 @@ namespace DocsParserLib.Parsers.WordParser
             return compets.First(n => n.Name.Equals(name.Trim(), StringComparison.OrdinalIgnoreCase));
         }
 
+        public string GetCompetencionDescription(string competention_name)
+        {
+            IEnumerable<Paragraph>? paragraphs = _doc.GetData()?.Elements<Paragraph>();
+
+            if (paragraphs != null)
+                foreach (var paragraph in paragraphs)
+                {
+                    string paragraph_text = paragraph.InnerText.Trim();
+
+                    if (paragraph_text.Contains(competention_name))
+                    {
+                        return paragraph_text;
+                    }
+                }
+
+            return string.Empty;
+        }
+
         private Competention? CreateCompetention(IEnumerable<TableRow> row)
         {
             Competention result = new Competention();
@@ -132,6 +150,9 @@ namespace DocsParserLib.Parsers.WordParser
 
             if (result.Name == "")
                 return null;
+
+
+            result.Description = GetCompetencionDescription(result.Name);
 
             return result;
         }

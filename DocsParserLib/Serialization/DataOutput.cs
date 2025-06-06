@@ -20,12 +20,13 @@ namespace DocsParserLib.Serialization
             CompetentionParser c_parser = new CompetentionParser(document);
             QuestionParser q_parser = new QuestionParser(document, c_parser);
             PracticTasksParser p_parser = new PracticTasksParser(document, c_parser);
+            DisciplineParser d_parser = new DisciplineParser(document);
 
-            return new ParsedDataBundle
+            return new ParsedDataBundle(d_parser.ParseOneDiscipline())
             {
-                Competentions = c_parser.Parse(),
-                Questions = q_parser.Parse(),
-                PracticTasks = p_parser.Parse()
+                Competentions = c_parser.Parse() ?? new List<Competention>(),
+                Questions = q_parser.Parse() ?? new List<Question>(),
+                PracticTasks = p_parser.Parse() ?? new List<PracticTask>()
             };
         }
     }

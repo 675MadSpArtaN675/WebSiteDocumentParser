@@ -1,7 +1,10 @@
-﻿namespace DatabaseWork.DataClasses.Tasks
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DatabaseWork.DataClasses.Tasks
 {
     public class Task_d
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IDtask { get; set; }
         public string? TaskAnnotation { get; set; }
         public string? TaskCorrectAnswer { get; set; }
