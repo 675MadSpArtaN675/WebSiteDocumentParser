@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
-using ParserSiteWork.Models;
-
+﻿using DatabaseWork;
+using DatabaseWork.DataClasses;
 using DatabaseWork.TypeConverters;
+using DatabaseWork.TypeConverters.DataClasses;
 using DocsParserLib.DataClasses;
 using DocsParserLib.InputData;
 using DocsParserLib.Interfaces.Serialization;
 using DocsParserLib.Serialization;
-using DatabaseWork.TypeConverters.DataClasses;
-using DatabaseWork;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using ParserSiteWork.Models;
 
 namespace ParserSiteWork.Controllers
 {
@@ -27,7 +27,10 @@ namespace ParserSiteWork.Controllers
         [HttpPost]
         public IActionResult DisplayDocumentData()
         {
-            var doc_data = HttpContext.Request.Form.Files[0];
+            var doc_data = HttpContext.Request.Form.Files.Count > 0 ? HttpContext.Request.Form.Files[0] : null;
+
+            if (doc_data is null)
+                return View("../Home/Index");
 
             using (var stream = doc_data.OpenReadStream())
             {
@@ -36,12 +39,13 @@ namespace ParserSiteWork.Controllers
                 IDataOutput dataOutput = new DataOutput();
                 ParsedDataBundle dataBundle = dataOutput.GetParsedData(doc);
 
+                ViewBag.Profiles = _db.Profiles.AsNoTracking().Select(p => new SelectListItem(p.ProTitle, p.ProTitle)).ToList();
                 return View("TablesPage", dataBundle);
             }
         }
 
         [HttpPost]
-        public IActionResult EditedDataRecieve(ParsedDataBundle data, string[] old_names)
+        public IActionResult EditedDataRecieve(ParsedDataBundle data, Profile profile, string[] old_names)
         {
 
             if (data is null)
@@ -50,13 +54,13 @@ namespace ParserSiteWork.Controllers
             Dictionary<string, string> names_comparsion = CompareOldNamesToNewNames(data, old_names);
 
             ParsedDataBundleConverter conv = new ParsedDataBundleConverter();
-            ConvertedDataBundle bundle = conv.Convert(data);
+            ConvertedDataBundle bundle = conv.Convert(data, profile);
             ExportDataToDatabase(bundle);
 
             FixData(data, names_comparsion);
             SerializeToXML(data);
 
-            return Redirect("/Home/Index");
+            return Redirect("/DataWorker/Index");
         }
 
         private void ExportDataToDatabase(ConvertedDataBundle bundle)
@@ -64,13 +68,16 @@ namespace ParserSiteWork.Controllers
             try
             {
                 _db.Tasks.AddRange(bundle.Tasks);
+                _db.SelectedItems.AddRange(bundle.SelectedItems);
                 _db.Competences.AddRange(bundle.Competences);
                 _db.Disciplines.AddRange(bundle.Discplines);
 
                 _db.SaveChanges();
             }
             catch (DbUpdateException ex)
-            { }
+            {
+                Console.WriteLine($"Не удалось обновить Базу данных.\n{ex}");
+            }
         }
 
         private static void FixData(ParsedDataBundle data, Dictionary<string, string> names_comparsion)

@@ -22,12 +22,15 @@ namespace DocsParserLib.Serialization
             PracticTasksParser p_parser = new PracticTasksParser(document, c_parser);
             DisciplineParser d_parser = new DisciplineParser(document);
 
-            return new ParsedDataBundle(d_parser.ParseOneDiscipline())
+            var Prased_date = new ParsedDataBundle
             {
                 Competentions = c_parser.Parse() ?? new List<Competention>(),
                 Questions = q_parser.Parse() ?? new List<Question>(),
-                PracticTasks = p_parser.Parse() ?? new List<PracticTask>()
+                PracticTasks = p_parser.Parse() ?? new List<PracticTask>(),
+                Discipline = d_parser.ParseOneDiscipline()
             };
+
+            return Prased_date;
         }
     }
 }

@@ -15,6 +15,7 @@ namespace DatabaseWork.DataClasses
         public string? CompNumber { get; set; }
         public string? CompAnnotation { get; set; }
 
+
         public TypeCompetence? CompType { get; set; }
         [Required]
         public Profile ProfileLink { get; set; }

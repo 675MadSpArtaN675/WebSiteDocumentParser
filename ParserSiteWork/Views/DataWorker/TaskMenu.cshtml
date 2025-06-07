@@ -1,7 +1,24 @@
 ﻿<h2>Работа с заданиями</h2>
 
+<div>
+	<form asp-action="Index" asp-controller="DataWorker">
+		<input type="submit" value="Назад" />
+	</form>
+</div>
+
 @await Html.PartialAsync("TypeTaskAdd")
 @await Html.PartialAsync("SelectItemsAdd")
 @await Html.PartialAsync("TaskAdd")
 
-@await Html.PartialAsync("UpdateData/UpdateTask")
+<h3>Обновление заданий</h3>
+<form asp-action="UpdateTask" asp-controller="UpdateData">
+	<label>Выбор задания</label>
+	<div>
+		<select name="task" asp-items="ViewBag.Tasks">
+			<option>Выбирай задание</option>
+		</select>
+	</div>
+
+	<hidden name="message">Выбрано: </hidden>
+	<input type="submit" value="Изменить" />
+</form>

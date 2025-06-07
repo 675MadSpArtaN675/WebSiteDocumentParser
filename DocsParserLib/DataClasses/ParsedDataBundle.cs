@@ -20,15 +20,15 @@
         /// </summary>
         public List<PracticTask> PracticTasks { get; set; }
 
-        public Discipline Discipline { get; set; }
+        public Discipline? Discipline { get; set; }
 
-        public ParsedDataBundle(Discipline discipline)
+        public ParsedDataBundle()
         {
             Competentions = new List<Competention>();
             Questions = new List<Question>();
             PracticTasks = new List<PracticTask>();
 
-            Discipline = discipline;
+            Discipline = null;
         }
 
         public Competention? GetCompetentionByName(string name)

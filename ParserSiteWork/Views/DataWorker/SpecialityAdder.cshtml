@@ -1,5 +1,11 @@
 ﻿@model Speciality;
 
+<div>
+	<form asp-action="Index" asp-controller="DataWorker">
+		<input type="submit" value="Назад"/>
+	</form>
+</div>
+
 @await Html.PartialAsync("../DataWorker/LevelAdder")
 @await Html.PartialAsync("../DataWorker/SpecGroupAdder")
 

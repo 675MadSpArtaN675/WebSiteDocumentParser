@@ -10,8 +10,6 @@ namespace DocsParserLib.Parsers.WordParser
 
         public override List<Discipline>? Data => throw new NotImplementedException();
 
-        
-
         public DisciplineParser(InputData.WordDocument document) : base(document)
         { }
 
@@ -33,7 +31,7 @@ namespace DocsParserLib.Parsers.WordParser
 
         public string GetDisciplineName()
         {
-            Regex pattern = new Regex("([Дд]исциплин[ыу])?«(?<discipline_name>.*)»?");
+            Regex pattern = new Regex("([Дд]исциплин[ыу])?«(?<discipline_name>.*)»");
 
             IEnumerable<Paragraph>? paragraphs = _doc.GetData()?.Elements<Paragraph>();
             

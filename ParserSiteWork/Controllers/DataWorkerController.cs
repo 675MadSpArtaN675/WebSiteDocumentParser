@@ -28,7 +28,7 @@ namespace ParserSiteWork.Controllers
             if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null)
             {
                 ReadData();
-                return View("../DataWorker/SpecialityAdder");
+                return View("SpecialityAdder");
             }
 
             return View("Authorization/Login");
@@ -40,7 +40,19 @@ namespace ParserSiteWork.Controllers
             if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null)
             {
                 ReadData();
-                return View("../DataWorker/TaskMenu");
+                return View("TaskMenu");
+            }
+
+            return View("Authorization/Login");
+        }
+
+        [HttpGet]
+        public IActionResult CompetencePage()
+        {
+            if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null)
+            {
+                ReadData();
+                return View("CompetenceAdd");
             }
 
             return View("Authorization/Login");
@@ -51,7 +63,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(level, _db.Levels);
 
-            return View("Index");
+            return View("SpecialityAdder");
         }
 
         [HttpPost]
@@ -59,7 +71,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(specGroup, _db.SpecGroups);
 
-            return View("Index");
+            return View("SpecialityAdder");
         }
 
         [HttpPost]
@@ -73,7 +85,7 @@ namespace ParserSiteWork.Controllers
 
             AddToDatabase(spec, _db.Specialities);
 
-            return View("Index");
+            return View("SpecialityAdder");
         }
 
         [HttpPost]
@@ -84,17 +96,17 @@ namespace ParserSiteWork.Controllers
 
             AddToDatabase(profile, _db.Profiles);
 
-            return View("Index");
+            return View("SpecialityAdder");
         }
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult DisciplineAdd(Discipline discipline, Profile? profile)
         {
             if (profile != null)
                 discipline.R_Profile = profile;
 
             AddToDatabase(discipline, _db.Disciplines);
-            return View("Index");
+            return View("SpecialityAdder");
         }
 
         [HttpPost]
@@ -130,7 +142,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(typeTask, _db.TaskTypes);
 
-            return View("Index");
+            return View("TaskMenu");
         }
 
         [HttpPost]
@@ -138,7 +150,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(selIt, _db.SelectedItems);
 
-            return View("Index");
+            return View("TaskMenu");
         }
 
         [HttpPost]
@@ -152,7 +164,7 @@ namespace ParserSiteWork.Controllers
             comp.ProfileLink = profile;
 
             AddToDatabase(comp, _db.Competences);
-            return View("Index");
+            return View("TaskMenu");
         }
 
         [HttpPost]
@@ -160,7 +172,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(typeTask, _db.TypesOfCompetences);
 
-            return View("Index");
+            return View("TaskMenu");
         }
 
         private void AddToDatabase<T>(T value, DbSet<T> dbSet) where T : class

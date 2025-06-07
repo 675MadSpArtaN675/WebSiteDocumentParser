@@ -9,10 +9,15 @@
 
 @using (Html.BeginForm("EditedDataRecieve", "DataReciever", FormMethod.Post, new { @id = "Tables" }))
 {
+    <div>
+        <select name="profile" asp-items="ViewBag.Profiles"></select>
+    </div>
+    <div>
+        @Html.EditorFor(m => Model.Discipline.Name, new { @value = Model.Discipline.Name})
+    </div>
+
     @await Html.PartialAsync("CompetentionTable", Model.Competentions) 
     @await Html.PartialAsync("QuestionTable", Model.Questions) 
-
-    @* @await Html.PartialAsync("PracticTasksTable", Model.PracticTasks) *@
 
     <h2>Практические задания</h2>
     <table>

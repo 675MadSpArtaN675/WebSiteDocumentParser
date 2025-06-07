@@ -14,15 +14,15 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpGet]
-        public IActionResult UpdateTask(Task_d task, string? message = "Выбрано: \n")
+        public IActionResult UpdateTask(Task_d task, string? message = "Выбрано: ")
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && task.TaskAnnotation != null)
             {
-                Console.WriteLine(message + $"{task.TaskAnnotation}");
+                Console.WriteLine(message + $"\n{task.TaskAnnotation}");
                 return View("UpdateData/UpdateTask", task);
             }
 
-            return View("DataWorker/Index");
+            return View("DataWorker/TaskPage");
         }
 
         [HttpPost]
@@ -32,7 +32,7 @@ namespace ParserSiteWork.Controllers
             {
                 UpdateDataInDB(task, _db.Tasks);
             }
-            return View("DataWorker/Index");
+            return View("DataWorker/TaskPage");
         }
 
         private void UpdateDataInDB<T>(T value, DbSet<T> values) where T : class

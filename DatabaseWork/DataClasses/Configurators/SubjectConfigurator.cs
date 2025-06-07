@@ -29,6 +29,8 @@ namespace DatabaseWork.DataClasses.Configurators
                 .HasOne(p => p.Spec)
                 .WithMany(s => s.ProfileLink)
                 .HasForeignKey("IDspec");
+
+            builder.Entity<Profile>().HasData(new { IDpro=1, ProTitle="None", ProYear=DateTime.Now.Year, ProAdminissionYear= DateTime.Now.Year });
         }
 
         private void DisciplineConfigure(ModelBuilder builder)
@@ -66,13 +68,13 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<TypeCompetence>()
                 .HasMany(p => p.Competence)
                 .WithOne(pp => pp.CompType)
-                .HasForeignKey("IDtc")
-                .IsRequired();
+                .HasForeignKey("IDtc");
 
             builder.Entity<Profile>()
                 .HasMany(c => c.CompetenceLink)
                 .WithOne(p => p.ProfileLink)
-                .HasForeignKey("IDpro");
+                .HasForeignKey("IDpro")
+                .IsRequired();
         }
     }
 }

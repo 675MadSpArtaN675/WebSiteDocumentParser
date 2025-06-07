@@ -1,4 +1,5 @@
-﻿using DatabaseWork.Interfaces;
+﻿using DatabaseWork.DataClasses;
+using DatabaseWork.Interfaces;
 using DatabaseWork.TypeConverters.DataClasses;
 using DocsParserLib.DataClasses;
 using DocumentFormat.OpenXml.Drawing.Charts;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseWork.TypeConverters
 {
-    public class ParsedDataBundleConverter : ILibTypeConverter<ParsedDataBundle, ConvertedDataBundle>
+    public class ParsedDataBundleConverter : ILibTypeConverterConnect<ParsedDataBundle, ConvertedDataBundle, Profile>
     {
         public ConvertedDataBundle Data { get; }
 
@@ -19,16 +20,17 @@ namespace DatabaseWork.TypeConverters
             Data = new ConvertedDataBundle();
         }
 
-        public ConvertedDataBundle Convert(ParsedDataBundle type)
+        public ConvertedDataBundle Convert(ParsedDataBundle type, Profile profile)
         {
             CompetentionConverter c_converter = new();
             QuestionConverter q_converter = new();
             PracticTaskConverter pt_converter = new();
             DisciplineConverter d_converter = new();
 
-            Data.Discplines.Add(d_converter.Convert(type.Discipline));
+            if (type.Discipline != null)
+                Data.Discplines.Add(d_converter.Convert(type.Discipline));
 
-            Data.Competences.AddRange(c_converter.ConvertAll(type.Competentions));
+            Data.Competences.AddRange(c_converter.ConvertAll(type.Competentions, profile));
 
             Data.Tasks.AddRange(q_converter.ConvertAll(type.Questions));
             Data.Tasks.AddRange(pt_converter.ConvertAll(type.PracticTasks));
@@ -39,6 +41,16 @@ namespace DatabaseWork.TypeConverters
         }
 
         public List<ConvertedDataBundle> ConvertAll(List<ParsedDataBundle> list)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ConvertedDataBundle> ConvertAll(List<ParsedDataBundle> list, Profile connect)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ConvertedDataBundle Convert(ParsedDataBundle type)
         {
             throw new NotImplementedException();
         }
