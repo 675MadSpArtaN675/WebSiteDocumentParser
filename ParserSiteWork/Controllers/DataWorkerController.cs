@@ -19,7 +19,7 @@ namespace ParserSiteWork.Controllers
         public IActionResult Index()
         {
             ReadData();
-            return View();
+            return View("Index");
         }
 
         [HttpGet]
@@ -29,6 +29,18 @@ namespace ParserSiteWork.Controllers
             {
                 ReadData();
                 return View("../DataWorker/SpecialityAdder");
+            }
+
+            return View("Authorization/Login");
+        }
+
+        [HttpGet]
+        public IActionResult TaskPage()
+        {
+            if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null)
+            {
+                ReadData();
+                return View("../DataWorker/TaskMenu");
             }
 
             return View("Authorization/Login");
@@ -176,6 +188,8 @@ namespace ParserSiteWork.Controllers
             ViewBag.TypeOfCompetences = _db.TypesOfCompetences.AsNoTracking().Select(p => new SelectListItem(p.TCTitle, p.TCTitle)).ToList();
             ViewBag.TypeTask = _db.TaskTypes.AsNoTracking().Select(p => new SelectListItem(p.TTTitle, p.TTTitle)).ToList();
             ViewBag.Discipline = _db.Disciplines.AsNoTracking().Select(p => new SelectListItem(p.DisTitle, p.DisTitle)).ToList();
+            
+            ViewBag.Tasks = _db.Tasks.AsNoTracking().Select(p => new SelectListItem(p.TaskAnnotation, p.TaskAnnotation)).ToList();
         }
     }
 }

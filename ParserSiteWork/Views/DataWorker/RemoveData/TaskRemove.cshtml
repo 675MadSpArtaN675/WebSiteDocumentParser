@@ -1,0 +1,19 @@
+﻿@model List<DeleteTaskModel>
+
+<h3>Удаление компетенции</h3>
+<form asp-action="RemoveTask" asp-controller="DataRemover">
+	<p>
+		@for (int i = 0; i < Model.Count; i++)
+		{
+			<div>
+				<p>@Model[i].Task?.TaskAnnotation</p>
+				<p>Правильный ответ: <div>@Model[i].Task?.TaskCorrectAnswer</div></p>
+				<p>Эталонный ответ: <div>@Model[i].Task?.TaskStandartAnswer</div></p>
+				<p>@Model[i].Task?.TaskTime</p>
+			</div>
+
+			@Html.CheckBoxFor(m => Model[i].ToDelete)
+		}
+		<input type="submit" value="Отправить"/>
+	</p>
+</form>

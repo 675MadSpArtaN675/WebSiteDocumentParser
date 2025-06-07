@@ -1,8 +1,5 @@
 ﻿@model Task_d;
 
-@await Html.PartialAsync("TypeTaskAdd")
-@await Html.PartialAsync("SelectItemsAdd")
-
 <h2>Добавление задания</h2>
 <form asp-action="TaskAdd" asp-controller="DataWorker" method="post">
 	<div>
@@ -13,10 +10,10 @@
 		<input asp-for="TaskCorrectAnswer" type="text" />
 
 		<label>Стандартный ответ</label>
-		<input asp-for="TaskStandartAnswer" type="text"/>
+		<input asp-for="TaskStandartAnswer" type="text" />
 
 		<label>Время выполнения</label>
-		<input asp-for="TaskTime" type="number"/>
+		<input asp-for="TaskTime" type="number" />
 	</div>
 
 	<div>
@@ -46,7 +43,7 @@
 			<option>Выбирайте</option>
 		</select>
 
-		<input type="checkbox" name="si[1].SelectTrue"/>
+		<input type="checkbox" name="si[1].SelectTrue" />
 	</div>
 
 	<div>
@@ -54,7 +51,7 @@
 		<select name="si[2]" asp-items="ViewBag.SelectItem">
 			<option>Выбирайте</option>
 		</select>
-		<input type="checkbox" name="si[2].SelectTrue"/>
+		<input type="checkbox" name="si[2].SelectTrue" />
 	</div>
 
 	<div>
@@ -62,6 +59,8 @@
 		<select name="si[3]" asp-items="ViewBag.SelectItem">
 			<option>Выбирайте</option>
 		</select>
-		<input type="checkbox" name="si[3].SelectTrue"/>
+		<input type="checkbox" name="si[3].SelectTrue" />
 	</div>
+
+	<input type="submit" value="Отправить" />
 </form>

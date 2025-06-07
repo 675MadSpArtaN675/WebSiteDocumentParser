@@ -1,0 +1,18 @@
+﻿@model Task_d;
+
+<h3>Обновить задание</h3>
+<form asp-action="UpdateTask" asp-controller="UpdateData" method="post">
+	<label>Описание задания</label>
+	<input asp-for="TaskAnnotation" type="text" value=@Model.TaskAnnotation/>
+
+	<label>Эталонный ответ</label>
+	<input asp-for="TaskCorrectAnswer" type="text" value=@Model.TaskCorrectAnswer />
+
+	<label>Стандартный ответ</label>
+	<input asp-for="TaskStandartAnswer" type="text" value=@Model.TaskStandartAnswer />
+
+	<label>Время выполнения</label>
+	<input asp-for="TaskTime" type="number" value=@Model.TaskTime/>
+
+	<input type="submit" value="Обновить"/>
+</form>

@@ -42,6 +42,8 @@ namespace ParserSiteWork.Controllers
                 }
                 catch (ArgumentNullException ex)
                 { }
+                catch (NullReferenceException ex)
+                { }
                 catch (IndexOutOfRangeException ex)
                 {
                     return Redirect("Authorization/Login");
