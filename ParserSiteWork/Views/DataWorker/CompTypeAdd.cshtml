@@ -1,0 +1,11 @@
+﻿@model TypeCompetence;
+
+<h2>Добавление типа компетенции</h2>
+<form asp-action="CompTypeAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="TCTitle">Заголовок</label>
+		<input asp-for="TCTitle" type="text" />
+	</div>
+
+	<input type="submit" value="Отправить" />
+</form>

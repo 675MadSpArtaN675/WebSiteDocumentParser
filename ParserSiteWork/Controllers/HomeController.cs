@@ -19,10 +19,12 @@ namespace ParserSiteWork.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null);
+            if (HttpContext.Request.Cookies["login_guid"] != null && HttpContext.Request.Cookies["role"] != null)
                 return View();
 
             return View("Authorization/Login");
         }
+
+        
     }
 }

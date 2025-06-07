@@ -1,0 +1,25 @@
+﻿@model DatabaseWork.DataClasses.Discipline;
+
+@await Html.PartialAsync("ProfileAdder");
+
+<h3>Создание дисциплины</h3>
+<form asp-action="DisciplineAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label>Номер</label>
+		<input asp-for="DisNumber" type="text" />
+		
+		<label>Заголовок</label>
+		<input asp-for="DisTitle" type="text" />
+		
+		<label>Последний семестр</label>
+		<input asp-for="DisFinalSemestr" type="text"/>
+	</div>
+
+	<div>
+		<label>Профиль</label>
+		<select name="profile" asp-items="ViewBag.Profiles">
+			<option>--Выбор--</option>
+		</select>
+	</div>
+	<input type="submit" value="Отправить"/>
+</form>

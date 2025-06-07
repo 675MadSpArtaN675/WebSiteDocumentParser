@@ -1,0 +1,11 @@
+﻿@model Level;
+
+<h2>Добавление уровня образования</h2>
+<form asp-action="LevelAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="LvTitle">Заголовок</label>
+		<input asp-for="LvTitle" type="text"/>
+	</div>
+
+	<input type="submit" value="Отправить" />
+</form>

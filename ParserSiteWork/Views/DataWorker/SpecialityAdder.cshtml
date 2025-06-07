@@ -1,0 +1,27 @@
+﻿@model Speciality;
+
+@await Html.PartialAsync("../DataWorker/LevelAdder")
+@await Html.PartialAsync("../DataWorker/SpecGroupAdder")
+
+<h2>Добавление специальности</h2>
+<form asp-action="SpecAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="SpecNumber">Номер специальности</label>
+		<input asp-for="SpecNumber" type="text"/>
+	</div>
+
+	<div>
+		<label asp-for="SpecTitle" >Заголовок специальности</label>
+		<input asp-for="SpecTitle" type="text"/>
+	</div>
+
+	<select name="LevelToSpec" asp-items="ViewBag.Levels">
+		<option>--Выберите--</option>
+	</select>
+
+	<select name="SpecGroup" asp-items="ViewBag.SpecGroups">
+		<option>--Выберите--</option>
+	</select>
+
+	<input type="submit" value="Отправить" />
+</form>

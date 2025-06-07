@@ -1,0 +1,28 @@
+﻿@model Competence;
+
+@await Html.PartialAsync("CompTypeAdd")
+
+<h2>Добавление компетенции</h2>
+<form asp-action="CompetenceAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label>Эталонный ответ</label>
+		<input asp-for="CompNumber" type="text" />
+
+		<label>Описание компетенции</label>
+		<input asp-for="CompAnnotation" type="text" />
+
+	</div>
+
+	<div>
+		<label>Тип компетенции</label>
+		<select name="type" asp-items="ViewBag.TypeOfCompetences">
+			<option>Выбирайте</option>
+		</select>
+	</div>
+	<div>
+		<label>Профиль</label>
+		<select name="profile" asp-items="ViewBag.Profiles">
+			<option>Выбирайте</option>
+		</select>
+	</div>
+</form>

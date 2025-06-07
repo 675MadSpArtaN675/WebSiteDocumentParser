@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 using ParserSiteWork.Models;
 
@@ -42,6 +43,7 @@ namespace ParserSiteWork.Controllers
         [HttpPost]
         public IActionResult EditedDataRecieve(ParsedDataBundle data, string[] old_names)
         {
+
             if (data is null)
                 return Content("Я ошибся!");
 
@@ -49,17 +51,26 @@ namespace ParserSiteWork.Controllers
 
             ParsedDataBundleConverter conv = new ParsedDataBundleConverter();
             ConvertedDataBundle bundle = conv.Convert(data);
-
-            _db.Tasks.AddRange(bundle.Tasks);
-            _db.Competences.AddRange(bundle.Competences);
-            _db.Disciplines.AddRange(bundle.Discplines);
-
-            _db.SaveChanges();
+            ExportDataToDatabase(bundle);
 
             FixData(data, names_comparsion);
             SerializeToXML(data);
 
             return Redirect("/Home/Index");
+        }
+
+        private void ExportDataToDatabase(ConvertedDataBundle bundle)
+        {
+            try
+            {
+                _db.Tasks.AddRange(bundle.Tasks);
+                _db.Competences.AddRange(bundle.Competences);
+                _db.Disciplines.AddRange(bundle.Discplines);
+
+                _db.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            { }
         }
 
         private static void FixData(ParsedDataBundle data, Dictionary<string, string> names_comparsion)

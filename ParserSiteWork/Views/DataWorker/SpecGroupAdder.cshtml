@@ -1,0 +1,16 @@
+﻿@model SpecGroup;
+
+<h2>Добавление укрупненной группы</h2>
+<form asp-action="SgAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="SGNumber">Номер</label>
+		<input asp-for="SGNumber" type="text" />
+	</div>
+
+	<div>
+		<label asp-for="SGTitle">Заголовок</label>
+		<input asp-for="SGTitle" type="text"/>
+	</div>
+
+	<input type="submit" value="Отправить"/>
+</form>

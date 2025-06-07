@@ -1,0 +1,31 @@
+﻿@model TypeTask;
+
+<h2>Добавление типа задания</h2>
+<form asp-action="TypeTaskAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="TTTitle">Заголовок</label>
+		<input asp-for="TTTitle" type="text" />
+	</div>
+
+	<div>
+		<label asp-for="TTInstruction">Наименование</label>
+		<input asp-for="TTInstruction" type="text" />
+	</div>
+
+	<div>
+		<label asp-for="TTScenario">Сценарий</label>
+		<input asp-for="TTScenario" type="text" />
+	</div>
+
+	<div>
+		<label asp-for="TTGradingGuide">Указание по оцениванию</label>
+		<input asp-for="TTGradingGuide" type="text" />
+	</div>
+
+	<div>
+		<label asp-for="TTGradingRules">Правила оценивания</label>
+		<input asp-for="TTGradingRules" type="text" />
+	</div>
+
+	<input type="submit" value="Отправить" />
+</form>

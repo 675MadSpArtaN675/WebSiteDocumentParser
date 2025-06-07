@@ -37,7 +37,7 @@ namespace ParserSiteWork.Controllers
                         HttpContext.Response.Cookies.Append("login_guid", Guid.NewGuid().ToString());
                         HttpContext.Response.Cookies.Append("role", user_finded.RoleLink?.Name ?? "user");
 
-                        return Redirect("Home/Index");
+                        return Redirect("DataWorker/Index");
                     }
                 }
                 catch (ArgumentNullException ex)

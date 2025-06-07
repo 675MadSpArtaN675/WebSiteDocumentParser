@@ -1,0 +1,11 @@
+﻿@model SelectedItems;
+
+<h3>Добавление варианта ответа</h3>
+<form asp-action="SelectedItemsAdd" asp-controller="DataWorker">
+	<div>
+		<label>Текст ответа</label>
+		<input asp-for="SelectValue" type="text"/>
+	</div>
+
+	<input type="submit" />
+</form>

@@ -1,0 +1,21 @@
+﻿@model Profile;
+
+<h2>Добавление профиля</h2>
+<form asp-action="ProfileAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label asp-for="ProTitle">Заголовок</label>
+		<input asp-for="ProTitle" type="text"/>
+
+		<label asp-for="ProYear">Год учебного плана</label>
+		<input asp-for="ProYear" type="text" />
+		
+		<label asp-for="ProAdminissionYear">Год набора</label>
+		<input asp-for="ProAdminissionYear" type="text" />
+	</div>
+
+	<select name="spec" asp-items="ViewBag.Specialities">
+		<option>--Выбирай--</option>
+	</select>
+
+	<input type="submit" value="Отправить"/>
+</form>

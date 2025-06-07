@@ -1,0 +1,67 @@
+﻿@model Task_d;
+
+@await Html.PartialAsync("TypeTaskAdd")
+@await Html.PartialAsync("SelectItemsAdd")
+
+<h2>Добавление задания</h2>
+<form asp-action="TaskAdd" asp-controller="DataWorker" method="post">
+	<div>
+		<label>Описание задания</label>
+		<input asp-for="TaskAnnotation" type="text" />
+
+		<label>Эталонный ответ</label>
+		<input asp-for="TaskCorrectAnswer" type="text" />
+
+		<label>Стандартный ответ</label>
+		<input asp-for="TaskStandartAnswer" type="text"/>
+
+		<label>Время выполнения</label>
+		<input asp-for="TaskTime" type="number"/>
+	</div>
+
+	<div>
+		<label>Тип задания</label>
+		<select name="type" asp-items="ViewBag.TypeTask">
+			<option>Выбирайте</option>
+		</select>
+	</div>
+	<div>
+		<label>Дисциплина</label>
+		<select name="discip" asp-items="ViewBag.Discipline">
+			<option>Выбирайте</option>
+		</select>
+	</div>
+
+	<div>
+		<label>1 вариант ответа</label>
+		<select name="si[0]" asp-items="ViewBag.SelectItem">
+			<option>Выбирайте</option>
+		</select>
+		<input type="checkbox" name="si[0].SelectTrue" />
+	</div>
+
+	<div>
+		<label>2 вариант ответа</label>
+		<select name="si[1]" asp-items="ViewBag.SelectItem">
+			<option>Выбирайте</option>
+		</select>
+
+		<input type="checkbox" name="si[1].SelectTrue"/>
+	</div>
+
+	<div>
+		<label>3 вариант ответа</label>
+		<select name="si[2]" asp-items="ViewBag.SelectItem">
+			<option>Выбирайте</option>
+		</select>
+		<input type="checkbox" name="si[2].SelectTrue"/>
+	</div>
+
+	<div>
+		<label>4 вариант ответа</label>
+		<select name="si[3]" asp-items="ViewBag.SelectItem">
+			<option>Выбирайте</option>
+		</select>
+		<input type="checkbox" name="si[3].SelectTrue"/>
+	</div>
+</form>
