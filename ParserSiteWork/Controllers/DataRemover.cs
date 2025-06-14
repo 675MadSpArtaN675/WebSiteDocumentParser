@@ -23,7 +23,7 @@ namespace ParserSiteWork.Controllers
                     if (competence.ToDelete && competence.Competence != null)
                         _db.Competences.Remove(competence.Competence);
                 }
-                
+
             }
 
             return View("DataWorker/Index");
@@ -39,7 +39,7 @@ namespace ParserSiteWork.Controllers
                     if (competence.ToDelete && competence.Profile != null)
                         _db.Profiles.Remove(competence.Profile);
                 }
-                
+
             }
 
             return View("DataWorker/Index");
@@ -55,7 +55,7 @@ namespace ParserSiteWork.Controllers
                     if (competence.ToDelete && competence.Task != null)
                         _db.Tasks.Remove(competence.Task);
                 }
-                
+
             }
 
             return View("DataWorker/Index");

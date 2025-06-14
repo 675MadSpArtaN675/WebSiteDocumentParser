@@ -1,24 +1,29 @@
-﻿using DatabaseWork.DataClasses.Tasks;
+﻿using DatabaseWork.DataClasses;
+using DatabaseWork.DataClasses.Tasks;
+using DatabaseWork.DataProcessors.StandartProcessors;
 using DatabaseWork.Interfaces;
 using DatabaseWork.TypeConverters.UtilityTypes;
 using DocsParserLib.DataClasses;
 
 namespace DatabaseWork.TypeConverters
 {
-    public class PracticTaskConverter : ILibTypeConverter<PracticTask, Task_d>
+    public class PracticTaskConverter : ILibTypeConverter<PracticTask, TaskDesciplineCompetenceLink>
     {
         public List<Task_d> Tasks { get; }
         public List<SelectedItems> AnswerVariants { get; }
+        public List<TaskDesciplineCompetenceLink> TDCLinks { get; }
 
         public PracticTaskConverter()
         {
             Tasks = new List<Task_d>();
             AnswerVariants = new List<SelectedItems>();
+            TDCLinks = new List<TaskDesciplineCompetenceLink>();
         }
 
-        public Task_d Convert(PracticTask type)
+        public TaskDesciplineCompetenceLink Convert(PracticTask type, DisciplineCompetenceLink? dc)
         {
             AnswerVariantConverter answerVariantConverter = new AnswerVariantConverter();
+            TaskDesciplineCompetenceLink tdc = new TaskDesciplineCompetenceLink();
 
             Task_d task = new Task_d
             {
@@ -33,20 +38,39 @@ namespace DatabaseWork.TypeConverters
                 item.TaskLink = task;
             }
 
+            tdc.TaskLink = task;
+
+            if (dc != null)
+            {
+                tdc.FullDCLink = dc;
+            }
+
             AnswerVariants.AddRange(aw);
             Tasks.Add(task);
+            TDCLinks.Add(tdc);
 
-            return task;
+            return tdc;
         }
 
-        public List<Task_d> ConvertAll(List<PracticTask> list)
+        public List<TaskDesciplineCompetenceLink> ConvertAll(List<PracticTask> list, List<DisciplineCompetenceLink> dc)
         {
             foreach (var item in list)
             {
-                Convert(item);
+                DisciplineCompetenceLink? dc_ = dc.FirstOrDefault(e => e.CompetenceLink.CompNumber.Equals(item.Competention.Name, StringComparison.OrdinalIgnoreCase));
+                Convert(item, dc_);
             }
 
-            return Tasks;
+            return TDCLinks;
+        }
+
+        public TaskDesciplineCompetenceLink Convert(PracticTask type)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<TaskDesciplineCompetenceLink> ConvertAll(List<PracticTask> list)
+        {
+            throw new NotImplementedException();
         }
     }
 }

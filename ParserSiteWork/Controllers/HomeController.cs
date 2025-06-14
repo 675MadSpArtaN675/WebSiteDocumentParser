@@ -25,6 +25,6 @@ namespace ParserSiteWork.Controllers
             return View("Authorization/Login");
         }
 
-        
+
     }
 }

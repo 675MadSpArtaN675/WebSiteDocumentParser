@@ -16,7 +16,7 @@ namespace DatabaseWork.DataClasses.Tasks
         public string? SelectValue { get; set; }
         public bool SelectTrue { get; set; }
 
-        [Required]
+        [Key]
         public Task_d TaskLink { get; set; }
     }
 
@@ -27,7 +27,7 @@ namespace DatabaseWork.DataClasses.Tasks
         public int IDia { get; set; }
         public string? IAText { get; set; }
 
-        [Required]
+        [Key]
         public Task_d TaskLink { get; set; }
     }
 
@@ -39,7 +39,7 @@ namespace DatabaseWork.DataClasses.Tasks
         public string? FPANumber { get; set; }
         public string? FPAValue { get; set; }
 
-        [Required]
+        [Key]
         public Task_d TaskLink { get; set; }
     }
 
@@ -51,7 +51,7 @@ namespace DatabaseWork.DataClasses.Tasks
         public string? SPANumber { get; set; }
         public string? SPAValue { get; set; }
 
-        [Required]
+        [Key]
         public Task_d TaskLink { get; set; }
     }
 }

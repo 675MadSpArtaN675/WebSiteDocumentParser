@@ -5,6 +5,12 @@
 }
 @model ParsedDataBundle
 
+<div>
+	<form asp-action="Index" asp-controller="Home">
+		<input type="submit" value="Назад" />
+	</form>
+</div>
+
 <h1>@ViewData["Title"]</h1>
 
 @using (Html.BeginForm("EditedDataRecieve", "DataReciever", FormMethod.Post, new { @id = "Tables" }))

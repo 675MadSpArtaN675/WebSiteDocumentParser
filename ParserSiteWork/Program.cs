@@ -7,13 +7,9 @@ namespace ParserSiteWork
 {
     public class Program
     {
-        public static List<AutorizationModel>? AuthorizedUsers { get; set; }
-
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            AuthorizedUsers = new List<AutorizationModel>();
 
             string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
 

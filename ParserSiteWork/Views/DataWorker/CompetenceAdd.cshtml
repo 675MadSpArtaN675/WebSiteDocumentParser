@@ -1,5 +1,11 @@
 ﻿@model Competence;
 
+<div>
+	<form asp-action="Index" asp-controller="DataWorker">
+		<input type="submit" value="Назад" />
+	</form>
+</div>
+
 @await Html.PartialAsync("CompTypeAdd")
 
 <h2>Добавление компетенции</h2>

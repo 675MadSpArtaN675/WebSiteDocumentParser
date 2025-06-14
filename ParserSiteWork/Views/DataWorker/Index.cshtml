@@ -1,4 +1,18 @@
-﻿<a asp-action="Index" asp-controller="Home">Загрузить данные из файла</a>
+﻿@model bool
+
+<div>
+	<form asp-action="Logout" asp-controller="Authorization">
+		<input type="submit" value="Выход" />
+	</form>
+</div>
+
+<a asp-action="Index" asp-controller="Home">Загрузить данные из файла</a>
 <a asp-action="SpecialityPage" asp-controller="DataWorker">Работа со специальностью</a>
 <a asp-action="CompetencePage" asp-controller="DataWorker">Работа с Компетенциями</a>
 <a asp-action="TaskPage" asp-controller="DataWorker">Работа с Заданиями</a>
+<a asp-action="Index" asp-controller="DisplayData">Отображение данных</a>
+
+@if (Model)
+{
+    <a asp-action="Index" asp-controller="Registration">Зарегистрировать пользователя</a>
+}

@@ -1,10 +1,19 @@
-﻿@model SelectedItems;
+﻿@model SelectedItemModel;
 
 <h3>Добавление варианта ответа</h3>
 <form asp-action="SelectedItemsAdd" asp-controller="DataWorker">
 	<div>
 		<label>Текст ответа</label>
 		<input asp-for="SelectValue" type="text"/>
+
+		<label>Правильный?</label>
+		<input asp-for="SelectTrue" type="checkbox"/>
+	</div>
+
+	<div>
+		<select asp-for="TaskObject" asp-items="ViewBag.Tasks">
+			<option>Выбирай</option>
+		</select>
 	</div>
 
 	<input type="submit" value="Отправить" />

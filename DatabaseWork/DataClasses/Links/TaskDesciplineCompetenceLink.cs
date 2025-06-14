@@ -9,10 +9,9 @@ namespace DatabaseWork.DataClasses
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IDtdc { get; set; }
 
-        [Required]
+        [Key]
         public Task_d TaskLink { get; set; }
 
-        [Required]
         public DisciplineCompetenceLink FullDCLink { get; set; }
     }
 }

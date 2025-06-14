@@ -13,9 +13,9 @@ namespace DatabaseWork.DataClasses
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IDdc { get; set; }
 
-        [Required]
+        [Key]
         public Competence CompetenceLink { get; set; }
-        [Required]
+        [Key]
         public Discipline DisciplineLink { get; set; }
 
         public List<TaskDesciplineCompetenceLink> TDCLink { get; set; }

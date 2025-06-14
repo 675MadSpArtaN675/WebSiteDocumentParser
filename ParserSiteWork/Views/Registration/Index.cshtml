@@ -1,0 +1,18 @@
+@model RegistrationModel;
+
+<form asp-action="Index" asp-controller="Registration" method="post">
+    <div>
+        <label asp-for="Login"/>
+        <input asp-for="Login" type="text"/>
+    </div>
+    <div>
+        <label asp-for="Password"/>
+        <input asp-for="Password" type="text"/>
+
+        <label asp-for="PasswordConfrim"/>
+        <input asp-for="PasswordConfrim" type="text"/>
+    </div>
+
+    <input type="submit" value="Зарегистрировать"/>
+</form>
+

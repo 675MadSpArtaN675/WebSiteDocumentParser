@@ -8,21 +8,34 @@ namespace ParserSiteWork.Controllers
     public class UpdateDataController : Controller
     {
         private DatabaseContext _db;
+
         public UpdateDataController(DatabaseContext database)
         {
             _db = database;
         }
 
         [HttpGet]
-        public IActionResult UpdateTask(Task_d task, string? message = "Выбрано: ")
+        public IActionResult UpdateTask(string task)
         {
-            if (ModelState.IsValid && task.TaskAnnotation != null)
+            if (ModelState.IsValid)
             {
-                Console.WriteLine(message + $"\n{task.TaskAnnotation}");
-                return View("UpdateData/UpdateTask", task);
+                Task_d? task_object = _db.Tasks.FirstOrDefault(e => e.TaskAnnotation == task);
+
+                if (task_object != null)
+                {
+                    return View("../DataWorker/UpdateData/UpdateTask", task_object);
+                }
             }
 
-            return View("DataWorker/TaskPage");
+            foreach(var item in ModelState)
+            {
+                foreach(var errors in item.Value.Errors)
+                {
+                    Console.WriteLine(errors.ErrorMessage);
+                }
+            }
+
+            return Redirect("/DataWorker/Index");
         }
 
         [HttpPost]
@@ -30,20 +43,22 @@ namespace ParserSiteWork.Controllers
         {
             if (ModelState.IsValid)
             {
-                UpdateDataInDB(task, _db.Tasks);
-            }
-            return View("DataWorker/TaskPage");
-        }
+                Task_d? task_object = _db.Tasks.FirstOrDefault(e => e.IDtask == task.IDtask);
 
-        private void UpdateDataInDB<T>(T value, DbSet<T> values) where T : class
-        {
-            try
-            {
-                values.Update(value);
-                _db.SaveChanges();
-            }
-            catch (DbUpdateException e) { }
+                if (task_object != null)
+                {
+                    task_object.TaskAnnotation = task.TaskAnnotation;
+                    task_object.TaskCorrectAnswer = task.TaskCorrectAnswer;
+                    task_object.TaskStandartAnswer = task.TaskStandartAnswer;
+                    task_object.TaskTime = task.TaskTime;
 
+                    _db.Tasks.Update(task_object);
+                    _db.SaveChanges();
+                }
+
+            }
+
+            return Redirect("/DataWorker/Index");
         }
     }
 }

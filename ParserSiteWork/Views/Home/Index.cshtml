@@ -3,6 +3,12 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div>
+	<form asp-action="Index" asp-controller="DataWorker">
+		<input type="submit" value="Назад" />
+	</form>
+</div>
+
 <h1>Прием Word документов</h1>
 
 @using (Html.BeginForm("DisplayDocumentData", "DataReciever", FormMethod.Post, new { enctype = "multipart/form-data" }))

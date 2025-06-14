@@ -4,6 +4,8 @@ using DatabaseWork.DataClasses.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using ParserSiteWork.Models;
+using System.Linq;
 
 namespace ParserSiteWork.Controllers
 {
@@ -19,7 +21,7 @@ namespace ParserSiteWork.Controllers
         public IActionResult Index()
         {
             ReadData();
-            return View("Index");
+            return View("Index", Request.Cookies["role"] == "admin");
         }
 
         [HttpGet]
@@ -79,7 +81,7 @@ namespace ParserSiteWork.Controllers
         {
             if (LevelToSpec != null)
                 spec.EdLevel = LevelToSpec;
-            
+
             if (specGroup != null)
                 spec.SGroup = specGroup;
 
@@ -110,31 +112,39 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult TaskAdd(Task_d task, Discipline discip, Competence comp, List<SelectedItems>? si, TypeTask? type)
+        public IActionResult TaskAdd(Task_d task, string discip, string comp, string? type)
         {
-            DisciplineCompetenceLink disciplineCompetence = new DisciplineCompetenceLink();
-            disciplineCompetence.CompetenceLink = comp;
-            disciplineCompetence.DisciplineLink = discip;
+            Console.WriteLine($"{discip}, {comp}, {type}");
+            if (ModelState.IsValid)
+            {
+                DisciplineCompetenceLink disciplineCompetence = new DisciplineCompetenceLink();
 
-            TaskDesciplineCompetenceLink tdc = new TaskDesciplineCompetenceLink();
-            tdc.FullDCLink = disciplineCompetence;
-            tdc.TaskLink = task;
+                disciplineCompetence.CompetenceLink = _db.Competences.FirstOrDefault(e => e.CompNumber == comp);
+                disciplineCompetence.DisciplineLink = _db.Disciplines.FirstOrDefault(e => e.DisTitle == discip);
 
-            if (si != null)
-                foreach (SelectedItems item in si)
-                {
-                    item.TaskLink = task;
-                }
+                TaskDesciplineCompetenceLink tdc = new TaskDesciplineCompetenceLink();
+                tdc.FullDCLink = disciplineCompetence;
+                tdc.TaskLink = task;
 
-            if (si != null)
-                task.SItems = si;
+                if (type != null)
+                    task.TaskType = _db.TaskTypes.FirstOrDefault(e => e.TTTitle == type);
 
-            if (type != null)
-                task.TaskType = type;
+                AddToDatabase(tdc, _db.FullTDC);
 
-            AddToDatabase(task, _db.Tasks);
+                return View("Index");
+            }
 
+            PrintErrors();
             return View("Index");
+        }
+
+        private void PrintErrors()
+        {
+            foreach (var item in ModelState)
+            {
+                foreach (var item_2 in item.Value.Errors)
+                    Console.WriteLine($"{item.Key} {item_2.ErrorMessage}");
+            }
         }
 
         [HttpPost]
@@ -146,9 +156,23 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult SelectedItemsAdd(SelectedItems selIt)
+        public IActionResult SelectedItemsAdd(SelectedItemModel selIt)
         {
-            AddToDatabase(selIt, _db.SelectedItems);
+            if (ModelState.IsValid)
+            {
+                Task_d? task = null;
+                if (selIt.TaskObject != null)
+                    task = _db.Tasks.FirstOrDefault(t => t.TaskAnnotation == selIt.TaskObject);
+
+                SelectedItems items = new SelectedItems { SelectValue = selIt.SelectValue, SelectTrue = selIt.SelectTrue };
+
+                if (task != null)
+                    items.TaskLink = task;
+
+                AddToDatabase(items, _db.SelectedItems);
+            }
+            else
+                PrintErrors();
 
             return View("TaskMenu");
         }
@@ -164,7 +188,7 @@ namespace ParserSiteWork.Controllers
             comp.ProfileLink = profile;
 
             AddToDatabase(comp, _db.Competences);
-            return View("TaskMenu");
+            return View("CompetenceAdd");
         }
 
         [HttpPost]
@@ -172,7 +196,7 @@ namespace ParserSiteWork.Controllers
         {
             AddToDatabase(typeTask, _db.TypesOfCompetences);
 
-            return View("TaskMenu");
+            return View("CompetenceAdd");
         }
 
         private void AddToDatabase<T>(T value, DbSet<T> dbSet) where T : class
@@ -183,7 +207,10 @@ namespace ParserSiteWork.Controllers
 
                 _db.SaveChanges();
             }
-            catch (DbUpdateException ex) { }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine($"Ошибка записи в БД: {ex}");
+            }
 
             ReadData();
         }
@@ -194,13 +221,13 @@ namespace ParserSiteWork.Controllers
             ViewBag.SpecGroups = _db.SpecGroups.AsNoTracking().Select(s => new SelectListItem(s.SGTitle, s.SGTitle)).ToList();
             ViewBag.Specialities = _db.Specialities.AsNoTracking().Select(s => new SelectListItem(s.SpecNumber, s.SpecNumber)).ToList();
             ViewBag.Profiles = _db.Profiles.AsNoTracking().Select(p => new SelectListItem(p.ProTitle, p.ProTitle)).ToList();
-            
+
             ViewBag.Competences = _db.Competences.AsNoTracking().Select(p => new SelectListItem(p.CompNumber, p.CompNumber)).ToList();
             ViewBag.SelectItem = _db.SelectedItems.AsNoTracking().Select(p => new SelectListItem(p.SelectValue, p.SelectValue)).ToList();
             ViewBag.TypeOfCompetences = _db.TypesOfCompetences.AsNoTracking().Select(p => new SelectListItem(p.TCTitle, p.TCTitle)).ToList();
             ViewBag.TypeTask = _db.TaskTypes.AsNoTracking().Select(p => new SelectListItem(p.TTTitle, p.TTTitle)).ToList();
             ViewBag.Discipline = _db.Disciplines.AsNoTracking().Select(p => new SelectListItem(p.DisTitle, p.DisTitle)).ToList();
-            
+
             ViewBag.Tasks = _db.Tasks.AsNoTracking().Select(p => new SelectListItem(p.TaskAnnotation, p.TaskAnnotation)).ToList();
         }
     }

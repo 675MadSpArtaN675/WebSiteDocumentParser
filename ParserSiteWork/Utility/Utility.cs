@@ -6,7 +6,7 @@
         private string _submodule_name;
         private string _sublist;
 
-        public HtmlNamesFormatter(string module_name, string submodule_name, string sublist = "") 
+        public HtmlNamesFormatter(string module_name, string submodule_name, string sublist = "")
         {
             _module_name = module_name;
             _submodule_name = submodule_name;
@@ -29,5 +29,5 @@
 
             return GetStartModelName(_submodule_name, start_part.Concat(fields).ToArray(), number);
         }
-    }   
+    }
 }

@@ -17,10 +17,10 @@ namespace DatabaseWork.DataClasses
 
 
         public TypeCompetence? CompType { get; set; }
-        [Required]
+        [Key]
         public Profile ProfileLink { get; set; }
 
-        [Required]
+        [Key]
         public List<DisciplineCompetenceLink> DCLink { get; set; }
     }
 
