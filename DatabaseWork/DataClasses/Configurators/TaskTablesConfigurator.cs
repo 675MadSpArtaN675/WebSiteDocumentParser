@@ -30,18 +30,21 @@ namespace DatabaseWork.DataClasses.Configurators
                 .HasMany(d => d.ItAccordance)
                 .WithOne(t => t.TaskLink)
                 .HasForeignKey("IDtask")
+                .OnDelete(DeleteBehavior.Cascade)
                 .IsRequired();
 
             builder.Entity<Task_d>()
                 .HasMany(d => d.FPAccordance)
                 .WithOne(t => t.TaskLink)
                 .HasForeignKey("IDtask")
+                .OnDelete(DeleteBehavior.Cascade)
                 .IsRequired();
 
             builder.Entity<Task_d>()
                 .HasMany(d => d.SPAccordance)
                 .WithOne(t => t.TaskLink)
                 .HasForeignKey("IDtask")
+                .OnDelete(DeleteBehavior.Cascade)
                 .IsRequired();
         }
 

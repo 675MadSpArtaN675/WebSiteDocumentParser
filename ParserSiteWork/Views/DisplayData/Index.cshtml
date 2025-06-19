@@ -12,7 +12,7 @@
         return GetTasksAnswerVariants(task).Where(si => si.SelectTrue);
     }
 
-    public string GetAnswerVariants(Task_d task, Func<Task_d, IEnumerable<SelectedItems>> chooser)
+    public string? GetAnswerVariants(Task_d task, Func<Task_d, IEnumerable<SelectedItems>> chooser)
     {
         IEnumerable<SelectedItems> answerVariants = chooser(task);
         int variants_count = answerVariants.Count();
@@ -21,7 +21,7 @@
             return string.Join('\n', answerVariants);
         
         else
-            return task.TaskCorrectAnswer;
+            return task.TaskCorrectAnswer ?? "None";
     }
 }
 

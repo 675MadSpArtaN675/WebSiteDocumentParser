@@ -66,7 +66,8 @@ namespace DatabaseWork.DataClasses.Configurators
             builder.Entity<Task_d>()
                 .HasMany(tdcl => tdcl.TDCLink)
                 .WithOne(t => t.TaskLink)
-                .HasForeignKey("IDtask");
+                .HasForeignKey("IDtask")
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.Entity<DisciplineCompetenceLink>()
                 .HasMany(tdcl => tdcl.TDCLink)

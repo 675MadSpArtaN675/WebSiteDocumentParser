@@ -58,6 +58,14 @@ namespace ParserSiteWork.Controllers
 
             }
 
+            foreach(var item in ModelState)
+            {
+                foreach(var errors in item.Value.Errors)
+                {
+                    Console.WriteLine(errors.ErrorMessage);
+                }
+            }
+
             return Redirect("/DataWorker/Index");
         }
     }

@@ -11,7 +11,7 @@
 @await Html.PartialAsync("TaskAdd")
 
 <h3>Обновление заданий</h3>
-<form asp-action="UpdateTask" asp-controller="UpdateData">
+<form asp-action="UpdateTask" asp-controller="UpdateData" method="get">
 	<label>Выбор задания</label>
 	<div>
 		<select name="task" asp-items="ViewBag.Tasks">
@@ -22,3 +22,5 @@
 	<hidden name="message">Выбрано: </hidden>
 	<input type="submit" value="Изменить" />
 </form>
+
+@await Html.PartialAsync("TaskRemove")

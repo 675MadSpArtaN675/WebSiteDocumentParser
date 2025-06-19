@@ -1,0 +1,11 @@
+<h4>Удаление задания</h4>
+<form asp-action="TaskRemove" asp-controller="DataRemover" method="post">
+    <div>
+        <label>Задание</label>
+        <select name="task_name" asp-items="ViewBag.Tasks">
+            <option>Выберите задание</option>
+        </select>
+    </div>
+    
+    <input type="submit" value="Отправить"/>
+</form>

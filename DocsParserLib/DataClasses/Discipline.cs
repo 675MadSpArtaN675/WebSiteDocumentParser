@@ -8,7 +8,6 @@ namespace DocsParserLib.DataClasses
 {
     public class Discipline
     {
-        public string Name { get; set; }
-        public Discipline() { }
+        public string Name { get; set; } = string.Empty;
     }
 }

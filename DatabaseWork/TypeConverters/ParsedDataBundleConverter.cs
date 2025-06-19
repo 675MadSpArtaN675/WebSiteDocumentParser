@@ -34,6 +34,9 @@ namespace DatabaseWork.TypeConverters
             if (type.Discipline != null)
                 Data.Discplines.Add(d_converter.Convert(type.Discipline));
 
+            foreach (var item in Data.Discplines)
+                System.Console.WriteLine(item.DisTitle);
+
             Data.Competences.AddRange(c_converter.ConvertAll(type.Competentions, profile));
             Data.DCLink.AddRange(ConnectDisciplineToCompetence(c_converter.Competentions, d_converter.Disciplines));
 

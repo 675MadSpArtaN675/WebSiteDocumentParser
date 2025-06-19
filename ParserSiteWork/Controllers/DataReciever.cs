@@ -48,11 +48,18 @@ namespace ParserSiteWork.Controllers
         [HttpPost]
         public IActionResult EditedDataRecieve(ParsedDataBundle data, Profile profile, string[] old_names)
         {
+            if (data is null)
+                    return Content("Я ошибся!");
+                    
+            var disciplineName = Request.Form["Discipline.Name"];
+            if (!string.IsNullOrEmpty(disciplineName))
+            {
+                data.Discipline = data.Discipline ?? new DocsParserLib.DataClasses.Discipline();
+                data.Discipline.Name = disciplineName;
+            }
+
             if (ModelState.IsValid)
             {
-                if (data is null)
-                    return Content("Я ошибся!");
-
                 Dictionary<string, string> names_comparsion = CompareOldNamesToNewNames(data, old_names);
 
                 ParsedDataBundleConverter conv = new ParsedDataBundleConverter();
@@ -65,6 +72,14 @@ namespace ParserSiteWork.Controllers
                 return Redirect("/DataWorker/Index");
             }
 
+            foreach(var item in ModelState)
+            {
+                foreach(var errors in item.Value.Errors)
+                {
+                    Console.WriteLine(errors.ErrorMessage);
+                }
+            }
+
             return View("../Home/Index");
         }
 
@@ -73,13 +88,11 @@ namespace ParserSiteWork.Controllers
         {
             try
             {
-                _db.Tasks.AddRange(bundle.Tasks);
-                _db.SelectedItems.AddRange(bundle.SelectedItems);
-                _db.Competences.AddRange(bundle.Competences);
-                _db.Disciplines.AddRange(bundle.Discplines);
+                System.Console.WriteLine(bundle.TDCLinks.Count);
+                System.Console.WriteLine(bundle.DCLink.Count);
+
                 _db.FullDiscipline.AddRange(bundle.DCLink);
                 _db.FullTDC.AddRange(bundle.TDCLinks);
-
                 _db.SaveChanges();
             }
             catch (DbUpdateException ex)

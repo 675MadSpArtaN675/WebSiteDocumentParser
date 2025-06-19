@@ -14,13 +14,13 @@ namespace DatabaseWork.DataClasses.Tasks
         public TypeTask? TaskType { get; set; }
 
 
-        public List<SelectedItems> SItems { get; set; }
+        public List<SelectedItems>? SItems { get; set; }
 
-        public List<ItemsAccordance> ItAccordance { get; set; }
-        public List<FirstPartAccordance> FPAccordance { get; set; }
-        public List<SecondPartAccordance> SPAccordance { get; set; }
+        public List<ItemsAccordance>? ItAccordance { get; set; }
+        public List<FirstPartAccordance>? FPAccordance { get; set; }
+        public List<SecondPartAccordance>? SPAccordance { get; set; }
 
-        public List<TaskDesciplineCompetenceLink> TDCLink { get; set; }
+        public List<TaskDesciplineCompetenceLink>? TDCLink { get; set; }
 
     }
 

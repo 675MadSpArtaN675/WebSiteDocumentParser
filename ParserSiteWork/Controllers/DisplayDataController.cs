@@ -25,7 +25,10 @@ namespace ParserSiteWork.Controllers
 
             var answer_variants = _db.SelectedItems.ToList();
 
-            return View("Index", new DisplayModel { SelectedItems=answer_variants, TaskCompetenceDisciplineData=base_info });
+            if (base_info != null && base_info.Count > 0)
+                return View("Index", new DisplayModel { SelectedItems = answer_variants, TaskCompetenceDisciplineData = base_info });
+
+            return Redirect("/DataWorker/Index");
         }
 
 

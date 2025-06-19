@@ -13,13 +13,14 @@
 
 <h1>@ViewData["Title"]</h1>
 
-@using (Html.BeginForm("EditedDataRecieve", "DataReciever", FormMethod.Post, new { @id = "Tables" }))
-{
+<form asp-action="EditedDataRecieve" asp-controller="DataReciever" method="post">
+
     <div>
         <select name="profile" asp-items="ViewBag.Profiles"></select>
     </div>
     <div>
-        @Html.EditorFor(m => Model.Discipline.Name, new { @value = Model.Discipline.Name})
+        @Html.Hidden("Discipline.Name", Model.Discipline?.Name)
+        <span asp-validation-for="Discipline.Name" class="text-danger"></span>
     </div>
 
     @await Html.PartialAsync("CompetentionTable", Model.Competentions) 
@@ -80,6 +81,6 @@
     </table>
 
     <input type="submit" value="Загрузить"/>
-}
+</form>
 
 

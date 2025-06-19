@@ -20,15 +20,13 @@
         /// </summary>
         public List<PracticTask> PracticTasks { get; set; }
 
-        public Discipline? Discipline { get; set; }
+        public DocsParserLib.DataClasses.Discipline Discipline { get; set; } = new DocsParserLib.DataClasses.Discipline();
 
         public ParsedDataBundle()
         {
             Competentions = new List<Competention>();
             Questions = new List<Question>();
             PracticTasks = new List<PracticTask>();
-
-            Discipline = null;
         }
 
         public Competention? GetCompetentionByName(string name)

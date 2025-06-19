@@ -1,5 +1,6 @@
 ﻿using DatabaseWork;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ParserSiteWork.Models;
 
 namespace ParserSiteWork.Controllers
@@ -59,6 +60,28 @@ namespace ParserSiteWork.Controllers
             }
 
             return View("DataWorker/Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> TaskRemove(string task_name)
+        {
+            var tdc = _db.FullTDC.Include("TaskLink").FirstOrDefault(e => e.TaskLink.TaskAnnotation.Equals(task_name));
+
+            if (tdc != null)
+            {
+                _db.FullTDC.Remove(tdc);
+            }
+            else
+            {
+                var task = _db.Tasks.FirstOrDefault(e => e.TaskAnnotation.Equals(task_name));
+
+                if (task != null)
+                    _db.Tasks.Remove(task);
+            }
+
+            await _db.SaveChangesAsync();
+            
+            return Redirect("../DataWorker/TaskPage");
         }
     }
 }

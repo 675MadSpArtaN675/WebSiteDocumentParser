@@ -112,19 +112,25 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult TaskAdd(Task_d task, string discip, string comp, string? type)
+        public IActionResult TaskAdd(Task_d task, string discip, string comp, string? type = null)
         {
             Console.WriteLine($"{discip}, {comp}, {type}");
             if (ModelState.IsValid)
             {
                 DisciplineCompetenceLink disciplineCompetence = new DisciplineCompetenceLink();
 
-                disciplineCompetence.CompetenceLink = _db.Competences.FirstOrDefault(e => e.CompNumber == comp);
-                disciplineCompetence.DisciplineLink = _db.Disciplines.FirstOrDefault(e => e.DisTitle == discip);
+                var competence = _db.Competences.FirstOrDefault(e => e.CompNumber == comp);
+                var discipline = _db.Disciplines.FirstOrDefault(e => e.DisTitle == discip);
 
                 TaskDesciplineCompetenceLink tdc = new TaskDesciplineCompetenceLink();
-                tdc.FullDCLink = disciplineCompetence;
                 tdc.TaskLink = task;
+
+                if (discipline != null && competence != null)
+                {
+                    disciplineCompetence.CompetenceLink = competence;
+                    disciplineCompetence.DisciplineLink = discipline;
+                    tdc.FullDCLink = disciplineCompetence;
+                }
 
                 if (type != null)
                     task.TaskType = _db.TaskTypes.FirstOrDefault(e => e.TTTitle == type);
@@ -178,14 +184,19 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult CompetenceAdd(Competence comp, Profile profile, TypeCompetence? type)
+        public IActionResult CompetenceAdd(Competence comp, string profile, TypeCompetence? type)
         {
             if (type != null)
             {
                 comp.CompType = type;
             }
 
-            comp.ProfileLink = profile;
+            var profile_ = _db.Profiles.FirstOrDefault(e => e.ProTitle.Equals(profile));
+
+            if (profile_ != null)
+                comp.ProfileLink = profile_;
+            else
+                comp.ProfileLink = _db.Profiles.FirstOrDefault(e => e.ProTitle.Equals("None"));
 
             AddToDatabase(comp, _db.Competences);
             return View("CompetenceAdd");
