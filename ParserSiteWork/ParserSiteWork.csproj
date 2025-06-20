@@ -15,4 +15,9 @@
     <Folder Include="Components\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="microsoft.office.interop.excel" Version="15.0.4795.1001" />
+    <PackageReference Include="microsoft.office.interop.word" Version="15.0.4797.1004" />
+  </ItemGroup>
+
 </Project>

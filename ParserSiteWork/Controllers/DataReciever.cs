@@ -49,7 +49,7 @@ namespace ParserSiteWork.Controllers
         public IActionResult EditedDataRecieve(ParsedDataBundle data, Profile profile, string[] old_names)
         {
             if (data is null)
-                    return Content("Я ошибся!");
+                return Content("Я ошибся!");
                     
             var disciplineName = Request.Form["Discipline.Name"];
             if (!string.IsNullOrEmpty(disciplineName))
