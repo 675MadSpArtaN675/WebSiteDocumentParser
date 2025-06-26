@@ -1,4 +1,6 @@
-﻿namespace DocsParserLib.DataClasses
+﻿using System.Text;
+
+namespace DocsParserLib.DataClasses
 {
     /// <summary>
     /// Структура для хранения всех распарсенных данных, таких как компетенции, вопросы и практические задачи
@@ -33,5 +35,25 @@
         {
             return Competentions.FirstOrDefault(n => n.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            PrintList(builder, Competentions);
+            PrintList(builder, Questions);
+            PrintList(builder, PracticTasks);
+
+            return builder.ToString();
+        }
+
+        public void PrintList<T>(StringBuilder builder, List<T> values) where T : class
+        {
+            foreach (var item in values)
+                builder.Append(item.ToString() + "\n");
+
+            builder.Append('\n');
+        }
+
     }
 }

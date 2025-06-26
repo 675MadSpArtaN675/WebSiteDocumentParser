@@ -11,4 +11,8 @@
     <ProjectReference Include="..\DocsParserLib\DocsParserLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FileFormat.Words" Version="24.12.0" />
+  </ItemGroup>
+
 </Project>

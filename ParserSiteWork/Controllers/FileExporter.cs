@@ -1,163 +1,172 @@
 using DatabaseWork;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Office.Interop.Word;
-using Microsoft.Office.Interop.Excel;
-using System.Runtime.InteropServices;
-using System.IO;
-
+using OfficeOpenXml;
+using OfficeOpenXml.Style;
 using ParserSiteWork.Models;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text.Json;
+using Xceed.Document.NET;
+using Xceed.Words.NET;
 
-class FileExporter : Controller
+namespace ParserSiteWork.Controllers;
+// FileExporter/Index
+public class FileExporterController : Controller
 {
     private DatabaseContext _db;
 
-    public FileExporter(DatabaseContext db)
+    public FileExporterController(DatabaseContext db)
     {
         _db = db;
     }
 
-    [HttpGet]
-    public IActionResult WordExport(DisplayModel model)
+    [HttpPost]
+    public IActionResult Index(string json_model, string? file_extension)
     {
-        Microsoft.Office.Interop.Word.Application? application = null;
-        Document? document = null;
+            DisplayModel? model = JsonSerializer.Deserialize<DisplayModel>(json_model, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+                
+            if (model is null)
+            {
+                return Redirect("/DisplayData/Index");
+            }
 
-        if (ModelState.IsValid)
-        {
+            switch (file_extension)
+            {
+                case "word":
+                    return WordExport(model);
+                case "excel":
+                    return ExcelExport(model);
+                default:
+                    return Redirect("/DisplayData/Index");
+            }
+        
+
+        return Redirect("/DisplayData/Index");
+    }
+
+
+    private IActionResult WordExport(DisplayModel model)
+    {
+        Console.WriteLine("Wfadfs");
             try
             {
-                application = new Microsoft.Office.Interop.Word.Application();
-                document = application.Documents.Add();
-
-                document.Sections[1].PageSetup.LeftMargin = application.CentimetersToPoints(2);
-                document.Sections[1].PageSetup.RightMargin = application.CentimetersToPoints(2);
-                document.Sections[1].PageSetup.TopMargin = application.CentimetersToPoints(2);
-                document.Sections[1].PageSetup.BottomMargin = application.CentimetersToPoints(2);
-
-                string[] headers = { "Профиль", "Компетенция", "Дисциплина", "Текст задания", "Правильный ответ", "Варианты ответов" };
-
-                Table table = document.Tables.Add(document.Range(0, 0), model.TaskCompetenceDisciplineData.Count + 1, headers.Length);
-                table.Borders.Enable = 1;
-                table.AllowAutoFit = true;
-
-                for (int i = 0; i < headers.Length; i++)
+                using (DocX document = DocX.Create(new MemoryStream()))
                 {
-                    table.Cell(1, i + 1).Range.Text = headers[i];
-                    table.Cell(1, i + 1).Range.Bold = 1;
-                }
+                    document.MarginLeft = 2f;
+                    document.MarginRight = 2f;
+                    document.MarginTop = 2f;
+                    document.MarginBottom = 2f;
 
-                for (int i = 0; i < model.TaskCompetenceDisciplineData.Count; i++)
-                {
-                    string?[] row = GetRow(model, i);
-                    for (int j = 0; j < row.Length; j++)
+                    string[] headers = { "Профиль", "Компетенция", "Дисциплина", "Текст задания", "Правильный ответ", "Варианты ответов" };
+
+                    Table table = document.AddTable(model.TaskCompetenceDisciplineData.Length + 1, headers.Length);
+                    table.Design = TableDesign.TableGrid;
+
+                    for (int i = 0; i < headers.Length; i++)
                     {
-                        table.Cell(i + 2, j + 1).Range.Text = row[j];
+                        Paragraph paragraph = table.Rows[0].Cells[i].Paragraphs[0];
+                        paragraph.Append(headers[i]);
+                        paragraph.Bold();
+                        paragraph.Alignment = Alignment.center;
+                        table.Rows[0].Cells[i].FillColor = Xceed.Drawing.Color.LightGray;
                     }
+
+                    for (int i = 0; i < model.TaskCompetenceDisciplineData.Length; i++)
+                    {
+                        string?[] row = GetRow(model, i);
+                        for (int j = 0; j < row.Length; j++)
+                        {
+                            Paragraph paragraph = table.Rows[i + 1].Cells[j].Paragraphs[0];
+                            paragraph.Append(row[j]);
+                            paragraph.Alignment = Alignment.center;
+                        }
+                    }
+
+                    table.SetWidthsPercentage(new float[] { 16.66f, 16.66f, 16.66f, 16.66f, 16.66f, 16.66f });
+
+                    MemoryStream stream = new MemoryStream();
+                    document.SaveAs(stream);
+                    stream.Position = 0;
+
+                    string fileName = "data.docx";
+                    return File(stream, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", fileName);
                 }
-
-                string filePath = ".\\temp\\ready.docx";
-                document.SaveAs2(filePath, WdSaveFormat.wdFormatDocumentDefault);
-
-                byte[] file_bytes = System.IO.File.ReadAllBytes(filePath);
-
-                return File(file_bytes, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine($"Не удалось сохранить данные: {ex}");
+                Console.WriteLine($"Не удалось сохранить данные: {ex}");
             }
-            finally
-            {
-                if (document != null)
-                {
-                    document.Close();
-                    Marshal.ReleaseComObject(document);
-                }
-
-                if (application != null)
-                {
-                    application.Quit();
-                    Marshal.ReleaseComObject(application);
-                }
-            }
-        }
+        
 
         return Redirect("/DisplayData/Index");
     }
 
-    [HttpGet]
-    public IActionResult ExcelExport(DisplayModel model)
+    private IActionResult ExcelExport(DisplayModel model)
     {
-        Microsoft.Office.Interop.Excel.Application? application = null;
-        Workbook? workbook = null;
-        Worksheet? worksheet = null;
-
-        if (ModelState.IsValid)
-        {
             try
             {
-                application = new Microsoft.Office.Interop.Excel.Application();
-
-                workbook = application.Workbooks.Add();
-                worksheet = (Worksheet)application.ActiveSheet;
-
-                string?[] headers = { "Профиль", "Компетенция", "Дисциплина", "Текст задания", "Правильный ответ", "Варианты ответов" };
-                WriteRow(worksheet, headers, 1, 1);
-
-                for (int i = 0; i < model.TaskCompetenceDisciplineData.Count; i++)
+                using (ExcelPackage excelPackage = new ExcelPackage())
                 {
-                    string?[] row = GetRow(model, i);
-                    WriteRow(worksheet, row, i + 2, 1);
+                    ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Data");
+
+                    string[] headers = { "Профиль", "Компетенция", "Дисциплина", "Текст задания", "Правильный ответ", "Варианты ответов" };
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        worksheet.Cells[1, i + 1].Value = headers[i];
+                        worksheet.Cells[1, i + 1].Style.Font.Bold = true;
+                        worksheet.Cells[1, i + 1].Style.Fill.PatternType = ExcelFillStyle.Solid;
+                        worksheet.Cells[1, i + 1].Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightGray);
+                    }
+
+                    for (int i = 0; i < model.TaskCompetenceDisciplineData.Length; i++)
+                    {
+                        string?[] row = GetRow(model, i);
+                        for (int j = 0; j < row.Length; j++)
+                        {
+                            worksheet.Cells[i + 2, j + 1].Value = row[j];
+                        }
+                    }
+
+                    worksheet.Cells.AutoFitColumns();
+
+                    MemoryStream stream = new MemoryStream();
+                    excelPackage.SaveAs(stream);
+                    stream.Position = 0;
+
+                    string fileName = "result.xlsx";
+                    return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
                 }
-
-                workbook.SaveAs(".\\temp\\ready.xlsx");
-
-                byte[] file_bytes = System.IO.File.ReadAllBytes(".\\temp\\ready.xlsx");
-            
-                return File(file_bytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
             }
             catch (Exception ex)
             {
                 System.Console.WriteLine($"Не удалось сохранить данные: {ex}");
             }
-            finally
-            {
-                if (workbook != null)
-                {
-                    workbook.Close();
-                    Marshal.ReleaseComObject(workbook);
-                }
 
-                if (application != null)
-                {
-                    application.Quit();
-                    Marshal.ReleaseComObject(application);
-                }
-            }
-
-        }
+        
 
         return Redirect("/DisplayData/Index");
     }
 
-    private void WriteRow(Worksheet sheet, string?[] row, int row_num, int start_column)
+    private static string?[] GetRow(DisplayModel model, int i)
     {
-        for (int i = start_column; i < row.Length; i++)
-        {
-            sheet.Cells[row_num, i] = row[i - start_column];
-        }
-    }
-    private string?[] GetRow(DisplayModel model, int index)
-    {
-        var tdc = model.TaskCompetenceDisciplineData;
-
+        var task = model.TaskCompetenceDisciplineData[i];
         return new string?[] {
-            tdc[index].FullDCLink.CompetenceLink.ProfileLink.ProTitle,
-            tdc[index].FullDCLink.CompetenceLink.CompNumber,
-            tdc[index].FullDCLink.DisciplineLink.DisTitle,
-            tdc[index].TaskLink.TaskAnnotation,
-            Extractor.GetAnswerVariants(model, tdc[index].TaskLink, Extractor.GetTasksValidAnswerVariants),
-            Extractor.GetAnswerVariants(model, tdc[index].TaskLink, Extractor.GetTasksAnswerVariants)
+            task.ProTitle,
+            task.CompNumber,
+            task.DisTitle,
+            task.TaskAnnotation,
+            Extractor.GetAnswerVariants(model, task, Extractor.GetTasksValidAnswerVariants),
+            Extractor.GetAnswerVariants(model, task, Extractor.GetTasksAnswerVariants)
         };
+    }
+
+    private void WriteRow(ExcelWorksheet sheet, string?[] row, int rowNum, int startColumn)
+    {
+        for (int i = 0; i < row.Length; i++)
+            sheet.Cells[rowNum, startColumn + i].Value = row[i];
     }
 }

@@ -1,6 +1,7 @@
 using DatabaseWork;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using ParserSiteWork.Models;
 
 namespace ParserSiteWork
@@ -9,6 +10,8 @@ namespace ParserSiteWork
     {
         public static void Main(string[] args)
         {
+            ExcelPackage.License.SetNonCommercialPersonal("VGTU");
+
             var builder = WebApplication.CreateBuilder(args);
 
             string? connection = builder.Configuration.GetConnectionString("DefaultConnection");

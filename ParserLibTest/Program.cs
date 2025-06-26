@@ -6,14 +6,20 @@ using DocsParserLib.Parsers.WordParser;
 
 using System.Linq.Expressions;
 
+using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
+
 namespace ParserLibTest
 {
-
     internal class Program
     {
         public static void Main(string[] args)
         {
-            TestParser();
+            using (WordprocessingDocument document = WordprocessingDocument.Create("Doc.docx", WordprocessingDocumentType.Document))
+            {
+                
+            }
         }
 
         public static ParsedDataBundle TestParseWordFile()

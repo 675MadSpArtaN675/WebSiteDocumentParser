@@ -1,9 +1,9 @@
 @using DatabaseWork.DataClasses;
 @using DatabaseWork.DataClasses.Tasks;
+
+@using System.Text.Json;
+
 @model DisplayModel;
-@functions {
-    
-}
 
 <div>
 	<form asp-action="Index" asp-controller="DataWorker">
@@ -11,8 +11,20 @@
 	</form>
 </div>
 
+<div>
+    <form asp-action="Index" asp-controller="FileExporter">
+        <div>
+            <input name="json_model" type="hidden" value="@ViewBag.SerializedModel" />
+            <select name="file_extension">
+                <option value="word">word</option>
+                <option value="excel">excel</option>
+            </select>
 
-<form id="ModelData" method="get">
+            <input type="submit" value="Сохранить" />
+        </div>
+    </form>
+</div>
+
 <table>
     <tr>
         <th>Профиль</th>
@@ -26,48 +38,24 @@
     {
         <tr>
             <td>
-                @task.FullDCLink.CompetenceLink.ProfileLink.ProTitle
+                @task.ProTitle
             </td>
             <td>
-                @task.FullDCLink.CompetenceLink.CompNumber
+                @task.CompNumber
             </td>
             <td>
-                @task.FullDCLink.DisciplineLink.DisTitle
+                @task.DisTitle
             </td>
             <td>
-                @task.TaskLink.TaskAnnotation
+                @task.TaskAnnotation
             </td>
             <td>
-                @Extractor.GetAnswerVariants(Model, task.TaskLink, Extractor.GetTasksValidAnswerVariants)
+                @Extractor.GetAnswerVariants(Model, task, Extractor.GetTasksValidAnswerVariants)
             </td>
             <td>
-                @Extractor.GetAnswerVariants(Model, task.TaskLink, Extractor.GetTasksAnswerVariants)
+                @Extractor.GetAnswerVariants(Model, task, Extractor.GetTasksAnswerVariants)
             </td>
         </tr>
     }
 
 </table>
-
-
-<div>
-    <input type="submit" id="wordSubmit" />
-    <input type="submit" id="excelSubmit" />
-</div>
-</form>
-
-<script>
-    document.getElementById("ModelData").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        let form = document.getElementById("ModelData");
-        let buttonClicked = event.submitter.id;
-
-        if (buttonClicked === "wordSubmit") {
-            form.action = "@Url.Action("WordExport", "FileExporter")";
-        } else if (buttonClicked === "excelSubmit") {
-            form.action = "@Url.Action("ExcelExport", "FileExporter")";
-        }
-
-        form.submit();
-    });
-</script>
