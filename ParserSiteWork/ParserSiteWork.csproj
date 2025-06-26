@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DatabaseWork\DatabaseWork.csproj" />
-    <ProjectReference Include="..\DocsParserLib\DocsParserLib.csproj" />
+    <Compile Remove="Components\**" />
+    <Content Remove="Components\**" />
+    <EmbeddedResource Remove="Components\**" />
+    <None Remove="Components\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\" />
+    <ProjectReference Include="..\DatabaseWork\DatabaseWork.csproj" />
+    <ProjectReference Include="..\DocsParserLib\DocsParserLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

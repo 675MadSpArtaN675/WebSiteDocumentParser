@@ -34,31 +34,45 @@ namespace DatabaseWork
         public DbSet<Role> Roles { get; set; } = null!;
 
         private readonly string _server_ip;
+        private readonly string _database_name;
+        private readonly string _username;
+        private readonly string _password;
 
-        public DatabaseContext() : this("localhost")
+        public DatabaseContext() : this("localhost", "app_database", "application_parser", "31bn74jf01")
         { }
 
-        public DatabaseContext(string server_ip)
+        public DatabaseContext(string server_ip, string database, string username, string password)
         {
-            this._server_ip = server_ip;
+            _server_ip = server_ip;
+            _database_name = database;
+            _username = username;
+            _password = password;
+
             Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql($"Host={_server_ip};Port=5432;Database=app_database;Username=application_parser;Password=31bn74jf01");
+            optionsBuilder.UseNpgsql($"Host={_server_ip};Port=5432;Database={_database_name};Username={_username};Password={_password}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            AbstractTableConfigurator[] configurator_modules = {
-                new SubjectTablesConfigurator(modelBuilder),
-                new TaskTablesConfigurator(modelBuilder),
-            };
+            try
+            {
+                AbstractTableConfigurator[] configurator_modules = {
+                    new SubjectTablesConfigurator(modelBuilder),
+                    new TaskTablesConfigurator(modelBuilder),
+                };
 
-            TotalConfigurator configurator = new TotalConfigurator(modelBuilder, configurator_modules);
+                TotalConfigurator configurator = new TotalConfigurator(modelBuilder, configurator_modules);
 
-            configurator.Configure();
+                configurator.Configure();
+            }
+            catch (Exception ex)
+            {
+                // TODO: Логировать ошибку и завершить работу приложения
+            }
         }
     }
 }

@@ -1,9 +1,6 @@
 ﻿using DatabaseWork;
-using DatabaseWork.DataClasses;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 using ParserSiteWork.Models;
 
 namespace ParserSiteWork.Controllers
