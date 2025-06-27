@@ -8,7 +8,7 @@ namespace ParserSiteWork.Models
 {
     public class DisplayModel
     {
-        public List<SelectedItems> SelectedItems;
-        public List<TaskDesciplineCompetenceLink> TaskCompetenceDisciplineData;
+        public SelectedItemsDTO[] SelectedItems { get; set; }
+        public TaskDesciplineCompetenceLinkDTO[] TaskCompetenceDisciplineData { get; set; }
     }
 }

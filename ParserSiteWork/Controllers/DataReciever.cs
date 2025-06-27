@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ParserSiteWork.Models;
 using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 
 namespace ParserSiteWork.Controllers
 {
@@ -46,11 +47,11 @@ namespace ParserSiteWork.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditedDataRecieve(ParsedDataBundle data, Profile profile, string[] old_names)
+        public async Task<IActionResult> EditedDataRecieve(ParsedDataBundle data, Profile? profile, string[] old_names)
         {
             if (data is null)
                 return Content("Я ошибся!");
-                    
+
             var disciplineName = Request.Form["Discipline.Name"];
             if (!string.IsNullOrEmpty(disciplineName))
             {
@@ -60,9 +61,15 @@ namespace ParserSiteWork.Controllers
 
             if (ModelState.IsValid)
             {
+                if (profile is null || profile.ProTitle == "" || profile.ProTitle is null)
+                {
+                    profile = await _db.Profiles.FirstAsync(e => e.ProTitle.Equals("None"));
+                }
+
                 Dictionary<string, string> names_comparsion = CompareOldNamesToNewNames(data, old_names);
 
                 ParsedDataBundleConverter conv = new ParsedDataBundleConverter();
+
                 ConvertedDataBundle bundle = conv.Convert(data, profile);
                 ExportDataToDatabase(bundle);
 
@@ -72,9 +79,9 @@ namespace ParserSiteWork.Controllers
                 return Redirect("/DataWorker/Index");
             }
 
-            foreach(var item in ModelState)
+            foreach (var item in ModelState)
             {
-                foreach(var errors in item.Value.Errors)
+                foreach (var errors in item.Value.Errors)
                 {
                     Console.WriteLine(errors.ErrorMessage);
                 }
@@ -88,11 +95,15 @@ namespace ParserSiteWork.Controllers
         {
             try
             {
-                System.Console.WriteLine(bundle.TDCLinks.Count);
-                System.Console.WriteLine(bundle.DCLink.Count);
+                Console.WriteLine(bundle.TDCLinks.Count);
+                Console.WriteLine(bundle.DCLink.Count);
+                Console.WriteLine(bundle.SelectedItems.Count);
 
-                _db.FullDiscipline.AddRange(bundle.DCLink);
-                _db.FullTDC.AddRange(bundle.TDCLinks);
+                var sel_task = _db.SelectedItems.AddRangeAsync(bundle.SelectedItems);
+                var disc_task = _db.FullDiscipline.AddRangeAsync(bundle.DCLink);
+                var tdc_task = _db.FullTDC.AddRangeAsync(bundle.TDCLinks);
+
+                Task.WhenAll(sel_task, disc_task, tdc_task).Wait();
                 _db.SaveChanges();
             }
             catch (DbUpdateException ex)

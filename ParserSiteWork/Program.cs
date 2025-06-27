@@ -1,7 +1,6 @@
 using DatabaseWork;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using ParserSiteWork.Models;
+using OfficeOpenXml;
 
 namespace ParserSiteWork
 {
@@ -9,6 +8,8 @@ namespace ParserSiteWork
     {
         public static void Main(string[] args)
         {
+            ExcelPackage.License.SetNonCommercialPersonal("VGTU");
+
             var builder = WebApplication.CreateBuilder(args);
 
             string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -16,7 +17,8 @@ namespace ParserSiteWork
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddAuthorization();
-            builder.Services.AddDbContext<DatabaseContext>(options => {
+            builder.Services.AddDbContext<DatabaseContext>(options =>
+            {
                 options.UseNpgsql(connection);
             });
 

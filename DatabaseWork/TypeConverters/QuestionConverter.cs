@@ -1,6 +1,5 @@
 ﻿using DatabaseWork.DataClasses;
 using DatabaseWork.DataClasses.Tasks;
-using DatabaseWork.DataProcessors.StandartProcessors;
 using DatabaseWork.Interfaces;
 using DocsParserLib.DataClasses;
 
@@ -19,14 +18,15 @@ namespace DatabaseWork.TypeConverters
 
         public TaskDesciplineCompetenceLink Convert(Question type, DisciplineCompetenceLink? dc)
         {
-            Task_d task = new Task_d {
+            Task_d task = new Task_d
+            {
                 TaskAnnotation = type.Description,
                 TaskCorrectAnswer = "",
             };
 
             TaskDesciplineCompetenceLink tdc = new TaskDesciplineCompetenceLink();
             tdc.TaskLink = task;
-            
+
             if (dc != null)
             {
                 tdc.FullDCLink = dc;

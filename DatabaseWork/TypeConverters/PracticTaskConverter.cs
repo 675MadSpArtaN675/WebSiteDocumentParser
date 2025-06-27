@@ -1,6 +1,5 @@
 ﻿using DatabaseWork.DataClasses;
 using DatabaseWork.DataClasses.Tasks;
-using DatabaseWork.DataProcessors.StandartProcessors;
 using DatabaseWork.Interfaces;
 using DatabaseWork.TypeConverters.UtilityTypes;
 using DocsParserLib.DataClasses;
@@ -32,9 +31,12 @@ namespace DatabaseWork.TypeConverters
             };
 
             List<SelectedItems> aw = answerVariantConverter.ConvertAll(type.answerVariants);
-            
-            foreach (var item in aw)
+
+            for (int i = 0; i < aw.Count; i++)
             {
+                SelectedItems item = aw[i];
+
+                Console.WriteLine($"{task.TaskAnnotation} {item.SelectValue}");
                 item.TaskLink = task;
             }
 

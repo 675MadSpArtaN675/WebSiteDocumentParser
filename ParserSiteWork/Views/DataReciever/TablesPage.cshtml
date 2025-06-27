@@ -19,7 +19,7 @@
         <select name="profile" asp-items="ViewBag.Profiles"></select>
     </div>
     <div>
-        @Html.Hidden("Discipline.Name", Model.Discipline?.Name)
+        @Html.TextBox("Discipline.Name", Model.Discipline?.Name)
         <span asp-validation-for="Discipline.Name" class="text-danger"></span>
     </div>
 

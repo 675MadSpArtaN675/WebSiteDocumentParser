@@ -1,25 +1,24 @@
 using ParserSiteWork.Models;
-using DatabaseWork.DataClasses.Tasks;
 
 public class Extractor
 {
-    public static IEnumerable<SelectedItems> GetTasksAnswerVariants(DisplayModel Model, Task_d task)
+    public static IEnumerable<SelectedItemsDTO> GetTasksAnswerVariants(DisplayModel Model, int id_task)
     {
-        return Model.SelectedItems.Where(si => si.TaskLink.Equals(task));
+        return Model.SelectedItems.Where(si => si.IdTask == id_task);
     }
 
-    public static IEnumerable<SelectedItems> GetTasksValidAnswerVariants(DisplayModel Model, Task_d task)
+    public static IEnumerable<SelectedItemsDTO> GetTasksValidAnswerVariants(DisplayModel Model, int id_task)
     {
-        return GetTasksAnswerVariants(Model, task).Where(si => si.SelectTrue);
+        return GetTasksAnswerVariants(Model, id_task).Where(si => si.SelectTrue);
     }
 
-    public static string? GetAnswerVariants(DisplayModel model, Task_d task, Func<DisplayModel, Task_d, IEnumerable<SelectedItems>> chooser)
+    public static string? GetAnswerVariants(DisplayModel model, TaskDesciplineCompetenceLinkDTO task, Func<DisplayModel, int, IEnumerable<SelectedItemsDTO>> chooser)
     {
-        IEnumerable<SelectedItems> answerVariants = chooser(model, task);
+        IEnumerable<SelectedItemsDTO> answerVariants = chooser(model, task.IdTask);
         int variants_count = answerVariants.Count();
 
         if (variants_count > 0)
-            return string.Join('\n', answerVariants);
+            return string.Join(",\n", answerVariants.Select(e => e.SelectValue));
 
         else
             return task.TaskCorrectAnswer ?? "None";
