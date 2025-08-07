@@ -1,0 +1,26 @@
+﻿@model Competence;
+
+<form asp-action="UpdateCompetence" asp-controller="UpdateData" method="post">
+	<hidden asp-for="IDcomp	"></hidden>
+	<div>
+		<label>Номер компетенции</label>
+		<input asp-for="CompNumber"/>
+	</div>
+
+	<div>
+		<label>Описание компетенции</label>
+		<input asp-for="CompAnnotation" />
+	</div>
+
+	<div>
+		<label>Тип компетенции</label>
+		<select name="comp_type" asp-items="ViewBag.TypeOfCompetences"></select>
+	</div>
+
+	<div>
+		<label>Профиль</label>
+		<select name="profile" asp-items="ViewBag.Profiles"></select>
+	</div>
+
+	<input type="submit" value="Обновить"/>
+</form>

@@ -19,7 +19,6 @@ namespace DatabaseWork.DataClasses
         public TypeCompetence? CompType { get; set; }
         [Key]
         public Profile ProfileLink { get; set; }
-
         [Key]
         public List<DisciplineCompetenceLink> DCLink { get; set; }
     }

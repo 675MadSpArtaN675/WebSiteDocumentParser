@@ -62,9 +62,8 @@ namespace ParserSiteWork.Controllers
             if (ModelState.IsValid)
             {
                 if (profile is null || profile.ProTitle == "" || profile.ProTitle is null)
-                {
                     profile = await _db.Profiles.FirstAsync(e => e.ProTitle.Equals("None"));
-                }
+
 
                 Dictionary<string, string> names_comparsion = CompareOldNamesToNewNames(data, old_names);
 
@@ -95,10 +94,6 @@ namespace ParserSiteWork.Controllers
         {
             try
             {
-                Console.WriteLine(bundle.TDCLinks.Count);
-                Console.WriteLine(bundle.DCLink.Count);
-                Console.WriteLine(bundle.SelectedItems.Count);
-
                 var sel_task = _db.SelectedItems.AddRangeAsync(bundle.SelectedItems);
                 var disc_task = _db.FullDiscipline.AddRangeAsync(bundle.DCLink);
                 var tdc_task = _db.FullTDC.AddRangeAsync(bundle.TDCLinks);

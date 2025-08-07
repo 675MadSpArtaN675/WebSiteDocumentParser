@@ -14,7 +14,6 @@ using System.Text.Json;
 
 
 namespace ParserSiteWork.Controllers;
-// FileExporter/Index
 public class FileExporterController : Controller
 {
     private readonly string[] HEADERS = ["Профиль", "Компетенция", "Дисциплина", "Текст задания", "Правильный ответ", "Варианты ответов"];

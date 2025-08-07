@@ -34,3 +34,15 @@
 
 	<input type="submit" value="Отправить" />
 </form>
+
+<h3>Обновление компетенции</h3>
+<form asp-action="UpdateCompetention" asp-controller="UpdateData">
+	<div>
+		<label>Компетенции</label>
+		<select name="competention" asp-items="ViewBag.Competences">
+			<option>Выбирайте</option>
+		</select>
+	</div>
+
+	<input type="submit" value="Обновить"/>
+</form>

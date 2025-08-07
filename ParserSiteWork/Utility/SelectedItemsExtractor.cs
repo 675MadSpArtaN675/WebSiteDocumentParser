@@ -18,9 +18,12 @@ public class Extractor
         int variants_count = answerVariants.Count();
 
         if (variants_count > 0)
-            return string.Join(",\n", answerVariants.Select(e => e.SelectValue));
+            return string.Join(";\n", answerVariants.Select(e => e.SelectValue));
+
+        else if (task.TaskCorrectAnswer != null && task.TaskCorrectAnswer != "")
+            return task.TaskCorrectAnswer;
 
         else
-            return task.TaskCorrectAnswer ?? "None";
+            return "Не указано!";
     }
 }
