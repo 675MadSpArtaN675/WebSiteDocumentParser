@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ParserSiteWork.Models;
+using DatabaseWork.DataClasses.Tasks;
 
 namespace ParserSiteWork.Controllers
 {
@@ -12,6 +13,46 @@ namespace ParserSiteWork.Controllers
         public DataRemover(DatabaseContext dbCon)
         {
             _db = dbCon;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemoveSI(string sel_item)
+        {
+            if (ModelState.IsValid)
+            {
+                SelectedItems? sel_item_obj = await _db.SelectedItems.FirstOrDefaultAsync(e => e.SelectValue.Equals(sel_item, StringComparison.OrdinalIgnoreCase));
+
+                if (sel_item_obj != null)
+                {
+                    _db.SelectedItems.Remove(sel_item_obj);
+                    _db.SaveChanges();
+
+                    return View("DataWorker/Index");
+                }
+
+            }
+
+            return View("DataWorker/Index"); ;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemoveTT(string type_task)
+        {
+            if (ModelState.IsValid)
+            {
+                TypeTask? tt = await _db.TaskTypes.FirstOrDefaultAsync(e => e.TTTitle.Equals(type_task, StringComparison.OrdinalIgnoreCase));
+
+                if (tt != null)
+                {
+                    _db.TaskTypes.Remove(tt);
+                    _db.SaveChanges();
+
+                    return View("DataWorker/Index");
+                }
+
+            }
+
+            return View("DataWorker/Index");
         }
 
         [HttpPost]
@@ -80,7 +121,7 @@ namespace ParserSiteWork.Controllers
             }
 
             await _db.SaveChangesAsync();
-            
+
             return Redirect("../DataWorker/TaskPage");
         }
     }

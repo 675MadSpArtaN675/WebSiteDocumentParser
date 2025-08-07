@@ -18,3 +18,11 @@
 
 	<input type="submit" value="Отправить" />
 </form>
+
+<h4>Удаление варианта ответа</h4>
+<form asp-action="RemoveSI" asp-controller="DataRemover" method="post">
+	<div>
+		<select name="sel_item" asp-items="ViewBag.SelectedItems"></select>
+	</div>
+	<input type="submit" value="Удалить" />
+</form>

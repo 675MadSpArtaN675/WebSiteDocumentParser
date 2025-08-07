@@ -29,3 +29,12 @@
 
 	<input type="submit" value="Отправить" />
 </form>
+
+
+<h4>Удаление типов заданий</h4>
+<form asp-action="RemoveTT" asp-controller="DataRemover" method="post">
+	<div>
+		<select name="type_task" asp-items="ViewBag.TypeTask"></select>
+	</div>
+	<input type="submit" value="Удалить" />
+</form>
